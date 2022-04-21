@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Button ({...props}) {
+function Recommendation ({...props}) {
     return (
         <button>
-
+            
         </button>
     )
 }
 
-export default Button
+export default Recommendation

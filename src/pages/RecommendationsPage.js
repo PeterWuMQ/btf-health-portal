@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Question ({...props}) {
+function RecommendationsPage ({...props}) {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Question ({...props}) {
     )
 }
 
-export default Question
+export default RecommendationsPage
