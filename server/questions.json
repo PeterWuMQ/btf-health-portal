@@ -2,88 +2,169 @@
     {
         "id": 0,
         "question": "placeholder",
-        "answer1": "",
-        "answer2": "",
-        "answer3": ""
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 1,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 2,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 3,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 4,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 5,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 6,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 7,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 8,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 9,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 10,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 11,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 12,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 13,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 14,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 15,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 16,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 17,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 18,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 19,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     },
     {
         "id": 20,
-        "question": "placeholder"
+        "question": "placeholder",
+        "answer1": "Did not apply to me at all - NEVER",
+        "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
+        "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
+        "answer4": "Applied to me very much, or most of the time - ALMOST ALWAYS"
     }
   ]
