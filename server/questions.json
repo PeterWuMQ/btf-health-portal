@@ -1,7 +1,8 @@
 [
     {
         "id": 0,
-        "question": "placeholder",
+        "type": "s",
+        "question": "I found it hard to wind down",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -9,7 +10,8 @@
     },
     {
         "id": 1,
-        "question": "placeholder",
+        "type": "a",
+        "question": "I was aware of dryness of my mouth ",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -17,7 +19,8 @@
     },
     {
         "id": 2,
-        "question": "placeholder",
+        "type": "d",
+        "question": "I couldn’t seem to experience any positive feeling at all",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -25,7 +28,8 @@
     },
     {
         "id": 3,
-        "question": "placeholder",
+        "type": "a",
+        "question": "I experienced breathing difficulty (e.g. excessively rapid breathing, breathlessness in the absence of physical exertion)",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -33,7 +37,8 @@
     },
     {
         "id": 4,
-        "question": "placeholder",
+        "type": "d",
+        "question": "I found it difficult to work up the initiative to do things",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -41,7 +46,8 @@
     },
     {
         "id": 5,
-        "question": "placeholder",
+        "type": "s",
+        "question": "I tended to over-react to situations",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -49,7 +55,8 @@
     },
     {
         "id": 6,
-        "question": "placeholder",
+        "type": "a",
+        "question": "I experienced trembling (e.g. in the hands)",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -57,7 +64,8 @@
     },
     {
         "id": 7,
-        "question": "placeholder",
+        "type": "s",
+        "question": "I felt that I was using a lot of nervous energy",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -65,7 +73,8 @@
     },
     {
         "id": 8,
-        "question": "placeholder",
+        "type": "a",
+        "question": "I was worried about situations in which I might panic and make a fool of myself",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -73,7 +82,8 @@
     },
     {
         "id": 9,
-        "question": "placeholder",
+        "type": "d",
+        "question": "I felt that I had nothing to look forward to",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -81,7 +91,8 @@
     },
     {
         "id": 10,
-        "question": "placeholder",
+        "type": "s",
+        "question": "I found myself getting agitated",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -89,7 +100,8 @@
     },
     {
         "id": 11,
-        "question": "placeholder",
+        "type": "s",
+        "question": "I found it difficult to relax",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -97,7 +109,8 @@
     },
     {
         "id": 12,
-        "question": "placeholder",
+        "type": "d",
+        "question": "I felt down-hearted and blue",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -105,7 +118,8 @@
     },
     {
         "id": 13,
-        "question": "placeholder",
+        "type": "s",
+        "question": "I was intolerant of anything that kept me from getting on with what I was doing",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -113,7 +127,8 @@
     },
     {
         "id": 14,
-        "question": "placeholder",
+        "type": "a",
+        "question": "I felt I was close to panic",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -121,7 +136,8 @@
     },
     {
         "id": 15,
-        "question": "placeholder",
+        "type": "d",
+        "question": "I was unable to become enthusiastic about anything",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -129,7 +145,8 @@
     },
     {
         "id": 16,
-        "question": "placeholder",
+        "type": "d",
+        "question": "I felt I wasn’t worth much as a person",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -137,7 +154,8 @@
     },
     {
         "id": 17,
-        "question": "placeholder",
+        "type": "s",
+        "question": "I felt that I was rather touchy",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -145,7 +163,8 @@
     },
     {
         "id": 18,
-        "question": "placeholder",
+        "type": "a",
+        "question": "I was aware of the action of my heart in the absence of physical exertion (e.g. sense of heart rate increase, heart missing a beat)",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -153,7 +172,8 @@
     },
     {
         "id": 19,
-        "question": "placeholder",
+        "type": "a",
+        "question": "I felt scared without any good reason",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
@@ -161,7 +181,8 @@
     },
     {
         "id": 20,
-        "question": "placeholder",
+        "type": "d",
+        "question": "I felt that life was meaningless",
         "answer1": "Did not apply to me at all - NEVER",
         "answer2": "Applied to me to some degree, or some of the time - SOMETIMES",
         "answer3": "Applied to me to a considerable degree, or a good part of time - OFTEN",
