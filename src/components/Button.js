@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Button ({...props}) {
+function Button ({type, children}) {
     return (
-        <button>
-
+        <button type={type}>
+            {children}
         </button>
     )
 }

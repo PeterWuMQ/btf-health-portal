@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ResultsPage ({...props}) {
+function ResultsPage ({result}) {
     return (
         <div>
             

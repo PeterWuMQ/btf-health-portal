@@ -1,7 +1,6 @@
 import axios from 'axios';
-import { response } from 'express';
 
-const baseURL = "/api"
+const baseURL = "http://localhost:3001/api"
 
 const getQuestions = () => {
     return axios.get(baseURL + "/questions")
@@ -23,3 +22,11 @@ const getRecommendations = () => {
                 return response.data
             })
 }
+
+const api = {
+    getQuestions,
+    getResults,
+    getRecommendations
+}
+
+export default api

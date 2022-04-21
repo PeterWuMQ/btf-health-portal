@@ -1,15 +1,21 @@
 import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import api from './services/api';
+import HomePage from './pages/HomePage'
+import QuestionnairePage from './pages/QuestionnairePage'
+import ResultsPage from './pages/ResultPage'
+import RecommendationPage from './pages/RecommendationsPage'
 
 function App() {
   const [questions, setQuestions] = useState([])
+  const [result, setResult] = useState([0, 0, 0])
 
   const getResult = () => {
     api.getResult()
     .then(data => {
-      const result = data
+      result = data
     })
   }
 
@@ -27,14 +33,19 @@ function App() {
     })
   })
 
+  useEffect(() => {
+    console.log(result)
+  }, [result])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/recommendations" element={<RecommendationPage/>} />
+        <Route path="/results" element={<ResultsPage result={result}/>} />
+        <Route path="/questionnaire" element={<QuestionnairePage questions={questions} setResult={setResult}/>} />
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 }
 
