@@ -24,7 +24,7 @@ function ResultsPage ({tables}) {
                     Scoring Guide
                 </Heading>
 
-                {tables ? <Table headings={tables.filter(t => t.id === 1)[0].headings} rows={tables.filter(t => t.id === 1)[0].rows}/>
+                {tables ? <Table headings={tables.filter(t => t.id === 1)[0].headings} rows={tables.filter(t => t.id === 1)[0].rows} result={tables.filter(t => t.id === 0)[0].rows}/>
                 : <></>}
             </div>
 
