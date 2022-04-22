@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage'
 import QuestionnairePage from './pages/QuestionnairePage'
 import ResultsPage from './pages/ResultPage'
 import RecommendationPage from './pages/RecommendationsPage'
+import DemographicQuestionsPage from './pages/DemographicQuestionsPage';
 
 function App() {
   const [questions, setQuestions] = useState([])
@@ -41,6 +42,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/recommendations" element={<RecommendationPage/>} />
+        <Route path="/questionnaire2" element={<DemographicQuestionsPage questions={questions}/>} />
         <Route path="/results" element={<ResultsPage result={result}/>} />
         <Route path="/questionnaire" element={<QuestionnairePage questions={questions} setResult={setResult}/>} />
         <Route path="/" element={<HomePage />} />

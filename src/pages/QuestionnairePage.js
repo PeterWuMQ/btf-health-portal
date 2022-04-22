@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+
 import { Link } from 'react-router-dom';
+
 import Button from '../components/Button';
 import QuestionList from '../components/lists/QuestionList';
+import Heading from '../components/text/Heading';
+import NormalText from '../components/text/NormalText';
 
 function QuestionnairePage ({questions, setResult}) {
     const [answers, setAnswers] = useState([]) 
@@ -25,10 +29,20 @@ function QuestionnairePage ({questions, setResult}) {
 
     return (
         <div>
+            <Heading>
+                Depression, Anxiety and Stress Scale 21 (DASS-21) 
+            </Heading>
+            <NormalText>
+                Please carefully read each statement and select the option with which you most agree. {"\n"}{"\n"}
+                Try to not overthink or spend too much time on each question, just simply consider which option most applies to you regarding your feelings over the past week. 
+            </NormalText>
             <form onSubmit={handleSubmit}>
                 <QuestionList questions={questions} answers={answers} setAnswers={setAnswers}></QuestionList>
-
-                    <Button type="submit"> Submit </Button>
+                <Link to="/results">
+                    <Button type="submit"> 
+                        See Your Results 
+                    </Button>
+                </Link>
 
             </form>
         </div>
