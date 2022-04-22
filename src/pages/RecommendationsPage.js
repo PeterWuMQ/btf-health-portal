@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import Button from '../components/Button';
 import Heading from '../components/text/Heading';
 import NormalText from '../components/text/NormalText';
+import Table from '../components/table/Table';
 
-function RecommendationsPage ({...props}) {
+function RecommendationsPage ({tables}) {
     return (
         <div>
             <Heading>
@@ -18,16 +20,8 @@ function RecommendationsPage ({...props}) {
             single, as well as that they would like to see a GP and use an online service)
             </NormalText>
 
-            <table>
-                <tr>
-                    <th><NormalText> Type of Service </NormalText></th>
-                    <th><NormalText> Link to Service </NormalText></th>
-                </tr>
-                <tr>
-                    <td><NormalText> ??? </NormalText></td>
-                    <td><NormalText> ??? </NormalText></td>
-                </tr>
-            </table>
+            {tables ? <Table headings={tables.filter(t => t.id === 3)[0].headings} rows={tables.filter(t => t.id === 3)[0].rows}/>
+            : <></>}
 
             <Link to="/">
                 <Button> Back Home </Button>

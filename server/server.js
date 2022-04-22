@@ -19,6 +19,9 @@ let results = JSON.parse(fileData)
 fileData = fs.readFileSync('server/recommendations.json')
 let recommendations = JSON.parse(fileData)
 
+fileData = fs.readFileSync('server/tables.json')
+let tables = JSON.parse(fileData)
+
 
 app.get('/api/questions', (request, response) => {
     response.send(questions)
@@ -30,6 +33,10 @@ app.get('/api/results', (request, response) => {
 
 app.get('/api/recommendations', (request, response) => {
     response.send(recommendations)
+})
+
+app.get('/api/tables', (request, response) => {
+    response.send(tables)
 })
 
 const PORT = 3001

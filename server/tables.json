@@ -1,0 +1,21 @@
+[
+    {
+        "id": 0,
+        "headings": ["Depression", "Anxiety", "Stress"],
+        "rows": [["-", "-", "-"]]
+    },
+    {
+        "id": 1,
+        "headings": ["Severity", "Depression", "Anxiety", "Stress"],
+        "rows": [["Normal", "0 - 4", "0 - 3", "0 - 7"],
+                ["Mild", "5 - 6", "4 - 5", "8 - 9"],
+                ["Moderate", "7 - 10", "6 - 7", "10 - 12"],
+                ["Severe", "11 - 13", "8 - 9", "13 - 16"],
+                ["Extemely Severe", "14+", "10+", "17+"]]
+    },
+    {
+        "id": 3,
+        "headings": ["Type of Service", "Link to Service"],
+        "rows": [["???", "???"]]
+    }
+]

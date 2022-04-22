@@ -11,14 +11,8 @@ import DemographicQuestionsPage from './pages/DemographicQuestionsPage';
 
 function App() {
   const [questions, setQuestions] = useState([])
-  const [result, setResult] = useState([0, 0, 0])
-
-  const getResult = () => {
-    api.getResult()
-    .then(data => {
-      result = data
-    })
-  }
+  const [tables, setTables] = useState(null)
+  const [result, setResult] = useState(["-", "-", "-"])
 
   const getRecommendation = () => {
     api.getRecommendations()
@@ -32,19 +26,20 @@ function App() {
     .then(data => {
       setQuestions(data)
     })
-  })
 
-  useEffect(() => {
-    console.log(result)
-  }, [result])
+    api.getTables()
+    .then(data => {
+      setTables(data)
+    })
+  }, [])
 
   return (
     <Router>
       <Routes>
-        <Route path="/recommendations" element={<RecommendationPage/>} />
+        <Route path="/recommendations" element={<RecommendationPage tables={tables}/>} />
         <Route path="/questionnaire2" element={<DemographicQuestionsPage questions={questions}/>} />
-        <Route path="/results" element={<ResultsPage result={result}/>} />
-        <Route path="/questionnaire" element={<QuestionnairePage questions={questions} setResult={setResult}/>} />
+        <Route path="/results" element={<ResultsPage tables={tables} result={result}/>} />
+        <Route path="/questionnaire" element={<QuestionnairePage questions={questions} tables={tables} setTables={setTables} setResult={setResult}/>} />
         <Route path="/" element={<HomePage />} />
       </Routes>
     </Router>

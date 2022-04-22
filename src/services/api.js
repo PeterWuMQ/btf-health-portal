@@ -16,6 +16,13 @@ const getResults = (result) => {
             })
 }
 
+const getTables = () => {
+    return axios.get(baseURL + "/tables")
+            .then(response => {
+                return response.data
+            })
+}
+
 const getRecommendations = () => {
     return axios.get(baseURL + "/recommendations")
             .then(response => {
@@ -26,7 +33,8 @@ const getRecommendations = () => {
 const api = {
     getQuestions,
     getResults,
-    getRecommendations
+    getRecommendations,
+    getTables
 }
 
 export default api

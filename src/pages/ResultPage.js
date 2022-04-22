@@ -1,72 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import Button from '../components/Button'
 import Heading from '../components/text/Heading';
 import NormalText from '../components/text/NormalText';
+import Table from '../components/table/Table'
 
-function ResultsPage ({result}) {
+function ResultsPage ({tables}) {
     return (
         <div>
             <Heading>
-                Your Scores ... 
+                Your Scores... 
             </Heading>
-
-            <table>
-                <tr>
-                    <th><NormalText> Depression </NormalText></th>
-                    <th><NormalText> Anxiety </NormalText></th>
-                    <th><NormalText> Stress </NormalText></th>
-                </tr>
-                <tr>
-                    <td><NormalText> placeholder </NormalText></td>
-                    <td><NormalText> placeholder </NormalText></td>
-                    <td><NormalText> placeholder </NormalText></td>
-                </tr>
-            </table>
+            
+            {tables ? <Table headings={tables.filter(t => t.id === 0)[0].headings} rows={tables.filter(t => t.id === 0)[0].rows}/>
+            : <></>}
 
             <Heading>
                 Scoring Guide
             </Heading>
 
-            <table>
-                <tr>
-                    <th><NormalText> Severity </NormalText></th>
-                    <th><NormalText> Depression </NormalText></th>
-                    <th><NormalText> Anxiety </NormalText></th>
-                    <th><NormalText> Stress </NormalText></th>
-                </tr>
-                <tr>
-                    <td><NormalText> Normal </NormalText></td>
-                    <td><NormalText> 0 - 4 </NormalText></td>
-                    <td><NormalText> 0 - 3 </NormalText></td>
-                    <td><NormalText> 0 - 7 </NormalText></td>
-                </tr>
-                <tr>
-                    <td><NormalText> Mild </NormalText></td>
-                    <td><NormalText> 5 - 6 </NormalText></td>
-                    <td><NormalText> 4 - 5 </NormalText></td>
-                    <td><NormalText> 8 - 9 </NormalText></td>
-                </tr>
-                <tr>
-                    <td><NormalText> Moderate </NormalText></td>
-                    <td><NormalText> 7 - 10 </NormalText></td>
-                    <td><NormalText> 6 - 7 </NormalText></td>
-                    <td><NormalText> 10 - 12 </NormalText></td>
-                </tr>
-                <tr>
-                    <td><NormalText> Severe </NormalText></td>
-                    <td><NormalText> 11 - 13 </NormalText></td>
-                    <td><NormalText> 8 - 9 </NormalText></td>
-                    <td><NormalText> 13 - 16 </NormalText></td>
-                </tr>
-                <tr>
-                    <td><NormalText> Extemely Severe </NormalText></td>
-                    <td><NormalText> 14+ </NormalText></td>
-                    <td><NormalText> 10+ </NormalText></td>
-                    <td><NormalText> 17+ </NormalText></td>
-                </tr>
-            </table>
+            {tables ? <Table headings={tables.filter(t => t.id === 1)[0].headings} rows={tables.filter(t => t.id === 1)[0].rows}/>
+            : <></>}
 
             <NormalText>
                 If you would like a copy of your results, or would like to share them with a trust family member or friend, please select from the options below:
