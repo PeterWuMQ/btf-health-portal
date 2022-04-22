@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Button from '../components/Button'
 import Heading from '../components/text/Heading';
 import NormalText from '../components/text/NormalText';
 import Table from '../components/table/Table'
+
 
 function ResultsPage ({tables}) {
     return (

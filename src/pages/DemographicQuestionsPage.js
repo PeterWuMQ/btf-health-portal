@@ -7,6 +7,7 @@ import Heading from '../components/text/Heading';
 import QuestionList from '../components/lists/QuestionList';
 import Subheading from '../components/text/Subheading';
 
+
 function DemographicQuestionsPage ({questions, setResultDQ}) {
     const [answers, setAnswers] = useState([]) 
     var tempAnswers = []

@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import Button from '../components/Button';
-import QuestionList from '../components/lists/QuestionList';
 import Heading from '../components/text/Heading';
 import NormalText from '../components/text/NormalText';
+import QuestionList from '../components/lists/QuestionList';
+
 
 function QuestionnairePage ({questions, setResult, tables, setTables}) {
     const [answers, setAnswers] = useState([]) 

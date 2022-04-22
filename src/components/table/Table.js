@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+
 import TableHeading from './TableHeading';
 import TableRow from './TableRow';
+
 
 function Table ({headings, rows}) {
     return (

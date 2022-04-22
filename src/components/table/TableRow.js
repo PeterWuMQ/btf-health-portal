@@ -1,5 +1,7 @@
 import React from 'react';
+
 import NormalText from '../text/NormalText';
+
 
 function TableRow ({rowItems}) {
     return (

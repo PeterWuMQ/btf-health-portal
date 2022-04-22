@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Question ({id, question, answer1, answer2, answer3, answer4, answers, setAnswers, type}) {
     const key1 = id + "1"
     const key2 = id + "2"

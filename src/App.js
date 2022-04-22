@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import api from './services/api';
+import DemographicQuestionsPage from './pages/DemographicQuestionsPage';
 import HomePage from './pages/HomePage'
 import QuestionnairePage from './pages/QuestionnairePage'
-import ResultsPage from './pages/ResultPage'
 import RecommendationPage from './pages/RecommendationsPage'
-import DemographicQuestionsPage from './pages/DemographicQuestionsPage';
+import ResultsPage from './pages/ResultPage'
 
 function App() {
   const [questions, setQuestions] = useState([])

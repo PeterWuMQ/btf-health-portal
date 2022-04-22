@@ -6,6 +6,7 @@ import Heading from '../components/text/Heading';
 import NormalText from '../components/text/NormalText';
 import Subheading from '../components/text/Subheading';
 
+
 function HomePage ({...props}) {
     return (
         <>

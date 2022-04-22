@@ -2,6 +2,7 @@ import React from 'react';
 
 import Recommendation from '../Recommendation'
 
+
 function RecommendationList ({...props}) {
     return (
         <Recommendation>
