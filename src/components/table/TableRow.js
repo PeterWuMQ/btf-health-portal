@@ -10,17 +10,7 @@ function TableRow ({rowItems, result, index}) {
             {result ? rowItems.map((r, i) => {
                 if (i !== 0) {
                     var temp = r.match(/[0-9]+/g)
-                    console.log(index)
-                    if (temp.length === 1) {
-                        if (result[0][i - 1] >= temp[0]) {
-                            return <td bgcolor={colour} key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>
-                        }
-                    } else {
-                        if (result[0][i - 1] >= temp[0] && result[0][i - 1] <= temp[1]) {
-                            return <td bgcolor={colour} key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>
-                        }
-                    }
-                    return <td key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>
+                    return <td bgcolor={(temp.length === 1 && result[0][i - 1] >= temp[0]) || (result[0][i - 1] >= temp[0] && result[0][i - 1] <= temp[1]) ? colour : null} key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>
                 } else {
                     return <td key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>
                 }
