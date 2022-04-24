@@ -7,7 +7,7 @@ function QuestionList ({questions, answers, setAnswers}) {
     return (
         <ul>
             {questions ? questions.map(q => 
-                <Question key={q.id} id={q.id} type={q.type} answers={answers} setAnswers={setAnswers} question={q.question} answer1={q.answer1} answer2={q.answer2} answer3={q.answer3} answer4={q.answer4}></Question>)
+                <Question key={q.id} qid={q.id} type={q.type} tempAnswers={answers} setAnswers={setAnswers} question={q.question} answers={q.answers}></Question>)
                 : <></>}
         </ul>
     )

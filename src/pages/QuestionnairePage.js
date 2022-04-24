@@ -21,9 +21,9 @@ function QuestionnairePage ({questions, setResult, tables, setTables}) {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        const s = answers.filter(a => a.type === 's').reduce((total, a) => + total + a.value, 0)
-        const a = answers.filter(a => a.type === 'a').reduce((total, a) => + total + a.value, 0)
-        const d = answers.filter(a => a.type === 'd').reduce((total, a) => + total + a.value, 0)
+        const s = answers.filter(a => a.type === 's').reduce((total, a) => total + a.value, 0)
+        const a = answers.filter(a => a.type === 'a').reduce((total, a) => total + a.value, 0)
+        const d = answers.filter(a => a.type === 'd').reduce((total, a) => total + a.value, 0)
 
         setResult([d, a, s])
 
