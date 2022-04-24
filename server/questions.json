@@ -3,126 +3,189 @@
         "id": 0,
         "type": "s",
         "question": "I found it hard to wind down",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 1,
         "type": "a",
         "question": "I was aware of dryness of my mouth ",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 2,
         "type": "d",
         "question": "I couldn’t seem to experience any positive feeling at all",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 3,
         "type": "a",
         "question": "I experienced breathing difficulty (e.g. excessively rapid breathing, breathlessness in the absence of physical exertion)",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 4,
         "type": "d",
         "question": "I found it difficult to work up the initiative to do things",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 5,
         "type": "s",
         "question": "I tended to over-react to situations",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 6,
         "type": "a",
         "question": "I experienced trembling (e.g. in the hands)",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 7,
         "type": "s",
         "question": "I felt that I was using a lot of nervous energy",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 8,
         "type": "a",
         "question": "I was worried about situations in which I might panic and make a fool of myself",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 9,
         "type": "d",
         "question": "I felt that I had nothing to look forward to",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 10,
         "type": "s",
         "question": "I found myself getting agitated",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 11,
         "type": "s",
         "question": "I found it difficult to relax",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 12,
         "type": "d",
         "question": "I felt down-hearted and blue",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 13,
         "type": "s",
         "question": "I was intolerant of anything that kept me from getting on with what I was doing",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 14,
         "type": "a",
         "question": "I felt I was close to panic",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 15,
         "type": "d",
         "question": "I was unable to become enthusiastic about anything",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 16,
         "type": "d",
         "question": "I felt I wasn’t worth much as a person",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 17,
         "type": "s",
         "question": "I felt that I was rather touchy",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 18,
         "type": "a",
         "question": "I was aware of the action of my heart in the absence of physical exertion (e.g. sense of heart rate increase, heart missing a beat)",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 19,
         "type": "a",
         "question": "I felt scared without any good reason",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     },
     {
         "id": 20,
         "type": "d",
         "question": "I felt that life was meaningless",
-        "answers": [[0, "None of the time"], [1, "Some of the time"], [2, "A lot of the time"], [3, "Most of the time"]]
+        "answers": [[0, "None of the time"], 
+                    [1, "Some of the time"], 
+                    [2, "A lot of the time"], 
+                    [3, "Most of the time"]]
     }
   ]
