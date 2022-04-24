@@ -10,10 +10,10 @@ import QuestionList from '../components/lists/QuestionList';
 function QuestionnairePage ({questions, setResult, tables, setTables}) {
     const [answers, setAnswers] = useState([]) 
     const navigate = useNavigate();
-    var tempAnswers = []
-
+   
     useEffect(() => {
-        for(var i = 0; i < 21; i++) {
+        var tempAnswers = []
+        for(var i = 0; i < questions.length; i++) {
             tempAnswers[i] = {type: "", value: 0}
         }
         setAnswers(tempAnswers)
@@ -21,9 +21,9 @@ function QuestionnairePage ({questions, setResult, tables, setTables}) {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        const s = answers.filter(a => a.type === 's').reduce((total, a) => total + a.value, 0)
-        const a = answers.filter(a => a.type === 'a').reduce((total, a) => total + a.value, 0)
-        const d = answers.filter(a => a.type === 'd').reduce((total, a) => total + a.value, 0)
+        const s = answers.filter(a => a.type === 's').reduce((total, a) => total + parseInt(a.value), 0)
+        const a = answers.filter(a => a.type === 'a').reduce((total, a) => total + parseInt(a.value), 0)
+        const d = answers.filter(a => a.type === 'd').reduce((total, a) => total + parseInt(a.value), 0)
 
         setResult([d, a, s])
 

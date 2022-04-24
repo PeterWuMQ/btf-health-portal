@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import Button from '../components/Button';
 import Heading from '../components/text/Heading';
@@ -8,20 +7,27 @@ import QuestionList from '../components/lists/QuestionList';
 import Subheading from '../components/text/Subheading';
 
 
-function DemographicQuestionsPage ({questions, setResultDQ}) {
+function DemographicQuestionsPage ({questions, setResultsDQ}) {
     const [answers, setAnswers] = useState([]) 
-    var tempAnswers = []
-    var tempTemp = questions.slice(0, 5)
+    const navigate = useNavigate();
 
-    React.useEffect(() => {
-        for(var i = 0; i < 21; i++) {
-            tempAnswers[i] = {type: "", value: 0}
+    useEffect(() => {
+        if (questions) {
+            var tempAnswers = []
+            for(var i = 0; i < questions.length; i++) {
+                tempAnswers[i] = {type: "", value: questions[i].answers[0][0]}
+            }
+            setAnswers(tempAnswers)
         }
-        setAnswers(tempAnswers)
-    }, [])
+    }, [questions])
 
     const handleSubmit = (event) => {
         event.preventDefault()
+
+        console.log(answers)
+        setResultsDQ(answers)
+
+        navigate("/recommendations")
     }
 
     return (
@@ -33,13 +39,10 @@ function DemographicQuestionsPage ({questions, setResultDQ}) {
                 By answering these questions, it will help us in providing the most relevant services to you.  
             </Subheading>
             <form onSubmit={handleSubmit}>
-                <QuestionList questions={tempTemp} answers={answers} setAnswers={setAnswers}></QuestionList>
-                <Link to="/recommendations">
-                    <Button type="submit"> 
-                        Find Services
-                    </Button>
-                </Link>
-
+                <QuestionList questions={questions} answers={answers} setAnswers={setAnswers}></QuestionList>
+                <Button type="submit"> 
+                    Find Services
+                </Button>
             </form>
         </div>
     )

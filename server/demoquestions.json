@@ -1,0 +1,80 @@
+[
+    {
+        "id": 0,
+        "qtype": "mc",
+        "question": "What is your age?",
+        "answers": [["18-24", "18-24 years"], 
+                    ["25-34", "25-34 years"], 
+                    ["35-44", "35-44 years"], 
+                    ["45-54", "45-54 years"],
+                    ["55-64", "55-64 years"],
+                    ["65+", "65+ years"]]
+    },
+    {
+        "id": 1,
+        "qtype": "mc",
+        "question": "Select your gender:",
+        "answers": [["N/A", "Prefer not to say"], 
+                    ["Male", "Male"], 
+                    ["Female", "Female"]]
+    },
+    {
+        "id": 2,
+        "qtype": "mc",
+        "question": "Do you identify as part of LGBTQI+ :",
+        "answers": [["Yes", "Yes"], 
+                    ["No", "No"]]
+    },
+    {
+        "id": 3,
+        "qtype": "dd",
+        "question": "What is your cultural background?",
+        "answers": [["English", "Australian/English"],
+                    ["Arabic", "Arabic"], 
+                    ["Cantonese", "Cantonese"], 
+                    ["Greek", "Greek"], 
+                    ["Hindi", "Hindi"], 
+                    ["Italian", "Italian"], 
+                    ["Korean", "Korean"], 
+                    ["Mandarin", "Mandarin"], 
+                    ["Spanish", "Spanish"], 
+                    ["Vietnamese", "Vietnamese"]]
+    },
+    {
+        "id": 4,
+        "qtype": "mc",
+        "question": "What is your marital status?",
+        "answers": [["Single", "Single"], 
+                    ["Married", "Married"], 
+                    ["Divorced", "Divorced"], 
+                    ["Widowed", "Widowed"]]
+    },
+    {
+        "id": 5,
+        "qtype": "mc",
+        "question": "Would you like to speak to a GP?",
+        "answers": [["Yes", "Yes"], 
+                    ["No", "No"]]
+    },
+    {
+        "id": 6,
+        "qtype": "mc",
+        "question": "Would you be open to seeing a therapist, such as a counsellor or psychologist?",
+        "answers": [["Yes", "Yes"], 
+                    ["No", "No"]]
+    },
+    {
+        "id": 7,
+        "qtype": "mc",
+        "question": "Would you like to use an online service, such as BeyondBlue, BetterHelp etc.?",
+        "answers": [["Yes", "Yes"], 
+                    ["No", "No"]]
+    },
+    {
+        "id": 8,
+        "qtype": "mc",
+        "question": "Would you like to receive a list of available support services in your area and you to reach out to them yourself?",
+        "answers": [["Yes", "Yes"], 
+                    ["No", "No"]]
+    }
+  ]
