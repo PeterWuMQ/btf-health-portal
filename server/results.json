@@ -1,6 +1,8 @@
 [
     {
         "id": 0,
-        "result": "placeholder"
+        "type": "d",
+        "score": "0-4",
+        "description": "placeholder"
     }
 ]
