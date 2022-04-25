@@ -14,14 +14,14 @@ function ResultsPage ({tables}) {
         <div>
             <div ref={ref}>
                 <Heading>
-                    Your Scores... 
+                    Your Results 
                 </Heading>
                 
                 {tables ? <Table headings={tables.filter(t => t.id === 0)[0].headings} rows={tables.filter(t => t.id === 0)[0].rows}/>
                 : <></>}
 
                 <Heading>
-                    Scoring Guide
+                    Results Guide
                 </Heading>
 
                 {tables ? <Table headings={tables.filter(t => t.id === 1)[0].headings} rows={tables.filter(t => t.id === 1)[0].rows} result={tables.filter(t => t.id === 0)[0].rows}/>

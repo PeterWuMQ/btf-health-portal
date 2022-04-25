@@ -19,7 +19,7 @@ function HomePage ({...props}) {
             </Subheading> 
 
             <Link to="/questionnaire">
-                <Button> Let's do it! </Button>
+                <Button> BEGIN </Button>
             </Link>
 
             <Subheading>

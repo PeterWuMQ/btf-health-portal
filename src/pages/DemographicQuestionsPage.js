@@ -33,7 +33,7 @@ function DemographicQuestionsPage ({questions, setResultsDQ}) {
     return (
         <div>
             <Heading>
-                Questions About You... 
+                Questions About You
             </Heading>
             <Subheading>
                 By answering these questions, it will help us in providing the most relevant services to you.  
