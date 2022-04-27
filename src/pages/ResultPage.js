@@ -36,6 +36,8 @@ function ResultsPage ({tables}) {
                 {({ toPdf }) => <Button onClick={toPdf}> Download </Button>}
             </Pdf>
 
+            <Button> Share </Button>
+
             <NormalText>
                 If you feel like you would benefit from utilising a service relevant to you, please select "Next". If not, you can close this window, or go "Back Home".
             </NormalText>
