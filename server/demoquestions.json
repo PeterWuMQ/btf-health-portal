@@ -73,7 +73,7 @@
     {
         "id": 8,
         "type": "mc",
-        "question": "Would you like to receive a list of available support services in your area and you to reach out to them yourself?",
+        "question": "Would you like a list of telephone support services and reach out to them yourself?",
         "answers": [["Services", "Yes"], 
                     ["No", "No"]]
     }
