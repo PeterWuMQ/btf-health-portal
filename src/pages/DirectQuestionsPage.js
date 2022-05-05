@@ -7,7 +7,7 @@ import QuestionList from '../components/lists/QuestionList';
 import Subheading from '../components/text/Subheading';
 
 
-function DemographicQuestionsPage ({questions, setResultsDQ}) {
+function DirectQuestionsPage ({questions, setResultsDQ}) {
     const [answers, setAnswers] = useState([]) 
     const navigate = useNavigate();
 
@@ -48,4 +48,4 @@ function DemographicQuestionsPage ({questions, setResultsDQ}) {
     )
 }
 
-export default DemographicQuestionsPage
+export default DirectQuestionsPage

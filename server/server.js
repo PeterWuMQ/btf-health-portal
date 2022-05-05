@@ -13,8 +13,8 @@ app.use(cors(corsOptions))
 let fileData = fs.readFileSync('server/questions.json')
 let questions = JSON.parse(fileData)
 
-fileData = fs.readFileSync('server/demoquestions.json')
-let demoQuestions = JSON.parse(fileData)
+fileData = fs.readFileSync('server/directquestions.json')
+let directQuestions = JSON.parse(fileData)
 
 fileData = fs.readFileSync('server/results.json')
 let results = JSON.parse(fileData)
@@ -30,8 +30,8 @@ app.get('/api/questions', (request, response) => {
     response.send(questions)
 })
 
-app.get('/api/demoquestions', (request, response) => {
-    response.send(demoQuestions)
+app.get('/api/directquestions', (request, response) => {
+    response.send(directQuestions)
 })
 
 app.get('/api/results', (request, response) => {

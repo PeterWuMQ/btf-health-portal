@@ -9,8 +9,8 @@ const getQuestions = () => {
             })
 }
 
-const getDemoQuestions = () => {
-    return axios.get(baseURL + "/demoquestions")
+const getDirectQuestions = () => {
+    return axios.get(baseURL + "/directquestions")
             .then(response => {
                 return response.data
             })
@@ -39,7 +39,7 @@ const getRecommendations = () => {
 
 const api = {
     getQuestions,
-    getDemoQuestions,
+    getDirectQuestions,
     getResults,
     getRecommendations,
     getTables

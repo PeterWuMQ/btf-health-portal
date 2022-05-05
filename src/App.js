@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import api from './services/api';
-import DemographicQuestionsPage from './pages/DemographicQuestionsPage';
+import DirectQuestionsPage from './pages/DirectQuestionsPage';
 import HomePage from './pages/HomePage'
 import QuestionnairePage from './pages/QuestionnairePage'
 import RecommendationPage from './pages/RecommendationsPage'
@@ -13,7 +13,7 @@ function App() {
   const [questions, setQuestions] = useState([])
   const [result, setResult] = useState(["-", "-", "-"])
   const [tables, setTables] = useState(null)
-  const [demoQuestions, setDemoQuestions] = useState([])
+  const [directQuestions, setDirectQuestions] = useState([])
   const [resultsDQ, setResultsDQ] = useState([])
   const [recommendations, setRecommendations] = useState([])
 
@@ -23,9 +23,9 @@ function App() {
       setQuestions(data)
     })
 
-    api.getDemoQuestions()
+    api.getDirectQuestions()
     .then(data => {
-      setDemoQuestions(data)
+      setDirectQuestions(data)
     })
 
     api.getTables()
@@ -43,7 +43,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/recommendations" element={<RecommendationPage tables={tables} resultsDQ={resultsDQ} recommendations={recommendations}/>} />
-        <Route path="/questionnaire2" element={<DemographicQuestionsPage questions={demoQuestions} setResultsDQ={setResultsDQ}/>} />
+        <Route path="/questionnaire2" element={<DirectQuestionsPage questions={directQuestions} setResultsDQ={setResultsDQ}/>} />
         <Route path="/results" element={<ResultsPage tables={tables} result={result}/>} />
         <Route path="/questionnaire" element={<QuestionnairePage questions={questions} tables={tables} setTables={setTables} setResult={setResult}/>} />
         <Route path="/" element={<HomePage />} />
