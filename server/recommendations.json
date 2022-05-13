@@ -1,7 +1,27 @@
 [
     {
         "id": 0,
-        "tags": ["Male, English"],
-        "body": "placeholder"
+        "tag": "Male",
+        "body": ["Male", "Male"]
+    },
+    {
+        "id": 1,
+        "tag": "GP",
+        "body": ["GP", "GP", "GP", "GP"]
+    },
+    {
+        "id": 2,
+        "tag": "Therapist",
+        "body": ["Therapist", "Therapist"]
+    },
+    {
+        "id": 3,
+        "tag": "Online",
+        "body": ["Online"]
+    },
+    {
+        "id": 4,
+        "tag": "Telephone",
+        "body": ["Telephone", "Telephone", "Telephone"]
     }
 ]

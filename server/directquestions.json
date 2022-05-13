@@ -1,77 +1,31 @@
 [
     {
         "id": 0,
-        "type": "mc",
-        "question": "What is your age?",
-        "answers": [["18-24", "18-24 years"], 
-                    ["25-34", "25-34 years"], 
-                    ["35-44", "35-44 years"], 
-                    ["45-54", "45-54 years"],
-                    ["55-64", "55-64 years"],
-                    ["65+", "65+ years"]]
+        "type": "mcfu",
+        "question": "Would you like to speak to a GP?",
+        "answers": [["GP", "Yes"], 
+                    ["No", "No"]],
+        "question2": "Would you prefer to see a GP of a particular gender?",
+        "answers2": [["No", "No"], 
+                    ["Male", "Male"], 
+                    ["Female", "Female"]]        
     },
     {
         "id": 1,
-        "type": "mc",
-        "question": "Select your gender:",
-        "answers": [["N/A", "Prefer not to say"], 
-                    ["Male", "Male"], 
-                    ["Female", "Female"]]
-    },
-    {
-        "id": 2,
-        "type": "mc",
-        "question": "Do you identify as part of LGBTQI+ :",
-        "answers": [["LGBT", "Yes"], 
-                    ["No", "No"]]
-    },
-    {
-        "id": 3,
-        "type": "dd",
-        "question": "What is your cultural background?",
-        "answers": [["English", "Australian/English"],
-                    ["Arabic", "Arabic"], 
-                    ["Cantonese", "Cantonese"], 
-                    ["Greek", "Greek"], 
-                    ["Hindi", "Hindi"], 
-                    ["Italian", "Italian"], 
-                    ["Korean", "Korean"], 
-                    ["Mandarin", "Mandarin"], 
-                    ["Spanish", "Spanish"], 
-                    ["Vietnamese", "Vietnamese"]]
-    },
-    {
-        "id": 4,
-        "type": "mc",
-        "question": "What is your marital status?",
-        "answers": [["Single", "Single"], 
-                    ["Married", "Married"], 
-                    ["Divorced", "Divorced"], 
-                    ["Widowed", "Widowed"]]
-    },
-    {
-        "id": 5,
-        "type": "mc",
-        "question": "Would you like to speak to a GP?",
-        "answers": [["GP", "Yes"], 
-                    ["No", "No"]]
-    },
-    {
-        "id": 6,
         "type": "mc",
         "question": "Would you be open to seeing a therapist, such as a counsellor or psychologist?",
         "answers": [["Therapist", "Yes"], 
                     ["No", "No"]]
     },
     {
-        "id": 7,
+        "id": 2,
         "type": "mc",
         "question": "Would you like to use an online service, such as BeyondBlue, BetterHelp etc.?",
         "answers": [["Online", "Yes"], 
                     ["No", "No"]]
     },
     {
-        "id": 8,
+        "id": 3,
         "type": "mc",
         "question": "Would you like a list of telephone support services and reach out to them yourself?",
         "answers": [["Services", "Yes"], 
