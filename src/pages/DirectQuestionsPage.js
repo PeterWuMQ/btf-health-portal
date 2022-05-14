@@ -24,7 +24,6 @@ function DirectQuestionsPage ({questions, setResultsDQ}) {
     const handleSubmit = (event) => {
         event.preventDefault()
 
-        console.log(answers)
         setResultsDQ(answers)
 
         navigate("/recommendations")

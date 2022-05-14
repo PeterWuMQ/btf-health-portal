@@ -4,31 +4,34 @@
         "type": "mcfu",
         "question": "Would you like to speak to a GP?",
         "answers": [["GP", "Yes"], 
-                    ["No", "No"]],
-        "question2": "Would you prefer to see a GP of a particular gender?",
-        "answers2": [["No", "No"], 
+                    ["No", "No"]]      
+    },
+    {
+        "id": 1,
+        "question": "If yes to the above, would you prefer to see a GP of a particular gender?",
+        "answers": [["No", "No"], 
                     ["Male", "Male"], 
                     ["Female", "Female"]]        
     },
     {
-        "id": 1,
+        "id": 2,
         "type": "mc",
         "question": "Would you be open to seeing a therapist, such as a counsellor or psychologist?",
         "answers": [["Therapist", "Yes"], 
                     ["No", "No"]]
     },
     {
-        "id": 2,
+        "id": 3,
         "type": "mc",
         "question": "Would you like to use an online service, such as BeyondBlue, BetterHelp etc.?",
         "answers": [["Online", "Yes"], 
                     ["No", "No"]]
     },
     {
-        "id": 3,
+        "id": 4,
         "type": "mc",
         "question": "Would you like a list of telephone support services and reach out to them yourself?",
-        "answers": [["Services", "Yes"], 
+        "answers": [["Telephone", "Yes"], 
                     ["No", "No"]]
     }
   ]

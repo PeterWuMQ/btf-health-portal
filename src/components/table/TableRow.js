@@ -5,6 +5,7 @@ import NormalText from '../text/NormalText';
 
 function TableRow ({rowItems, result, index}) {
     const colour = index === 0 ? "green" : index === 1 ? "blue" : index === 2 ? "yellow" : index === 3 ? "orange" : "red"
+
     return (
         <tr>
             {result ? rowItems.map((r, i) => {
@@ -15,7 +16,13 @@ function TableRow ({rowItems, result, index}) {
                 : <td key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>
                 : <td key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>
             })
-            : rowItems.map((r, i) => <td key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>)}
+            : rowItems.map((r, i) => {
+                if(Array.isArray(r)) {
+                    return <td key={i + ".1"}> {r.map((t, i2) => <NormalText key={i + i2 + ".2"}> {t} </NormalText>)}</td>
+                } else {
+                    return <td key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>
+                } 
+                })}
         </tr>
     )
 }
