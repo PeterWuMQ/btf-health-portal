@@ -9,32 +9,32 @@ import Table from '../components/table/Table'
 
 const ref = React.createRef()
 
-function ResultsPage ({tables, result}) {
+function ResultsPage({ tables, result }) {
     const [resultTable, setResultTable] = useState(null)
     useEffect(() => {
-        if(tables) {
+        if (tables) {
             let resultTable = tables
             resultTable[0].rows[0] = result
             setResultTable(resultTable[0])
         }
-    }, [result, resultTable, setResultTable, tables])
-    
+    }, [result, setResultTable, tables])
+
     return (
         <div>
             <div ref={ref}>
                 <Heading>
-                    Your Results 
+                    Your Results
                 </Heading>
-                
-                {resultTable ? <Table headings={resultTable.headings} rows={resultTable.rows}/>
-                : <></>}
+
+                {resultTable ? <Table headings={resultTable.headings} rows={resultTable.rows} />
+                    : <></>}
 
                 <Heading>
                     Results Guide
                 </Heading>
 
-                {tables ? <Table headings={tables.filter(t => t.id === 1)[0].headings} rows={tables.filter(t => t.id === 1)[0].rows} result={tables.filter(t => t.id === 0)[0].rows}/>
-                : <></>}
+                {tables ? <Table headings={tables.filter(t => t.id === 1)[0].headings} rows={tables.filter(t => t.id === 1)[0].rows} result={tables.filter(t => t.id === 0)[0].rows} />
+                    : <></>}
             </div>
 
             <NormalText>

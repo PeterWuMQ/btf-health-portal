@@ -27,12 +27,6 @@ function QuestionnairePage ({questions, setResult, tables, setTables}) {
 
         setResult([d, a, s])
 
-        if(tables) {
-            let resultTable = tables
-            resultTable[0].rows[0] = [d, a, s]
-            setTables(resultTable)
-        }
-
         navigate("/results")
     }
 
