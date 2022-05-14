@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Pdf from 'react-to-pdf'
 
@@ -9,7 +9,16 @@ import Table from '../components/table/Table'
 
 const ref = React.createRef()
 
-function ResultsPage ({tables}) {
+function ResultsPage ({tables, result}) {
+    const [resultTable, setResultTable] = useState(null)
+    useEffect(() => {
+        if(tables) {
+            let resultTable = tables
+            resultTable[0].rows[0] = result
+            setResultTable(resultTable[0])
+        }
+    }, [result, resultTable, setResultTable, tables])
+    
     return (
         <div>
             <div ref={ref}>
@@ -17,7 +26,7 @@ function ResultsPage ({tables}) {
                     Your Results 
                 </Heading>
                 
-                {tables ? <Table headings={tables.filter(t => t.id === 0)[0].headings} rows={tables.filter(t => t.id === 0)[0].rows}/>
+                {resultTable ? <Table headings={resultTable.headings} rows={resultTable.rows}/>
                 : <></>}
 
                 <Heading>

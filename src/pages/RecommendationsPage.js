@@ -7,47 +7,49 @@ import NormalText from '../components/text/NormalText';
 import Table from '../components/table/Table';
 
 
-function RecommendationsPage ({tables, setTable, resultsDQ, recommendations}) {
+function RecommendationsPage ({tables, resultsDQ, recommendations}) {
     const [recommendationsTable, setRecommendationsTable] = useState(null)
     useEffect(() => {
-        const tempRec = recommendations
-        const tempRes = resultsDQ
-        const tempTab = tables
-        
-        if(tables) {
-          tempTab[2].rows = []
+      console.log(resultsDQ)
+
+      const tempRec = recommendations
+      const tempRes = resultsDQ
+      const tempTab = tables
+      
+      if(tables) {
+        tempTab[2].rows = []
+      }
+  
+      if(tempRes.length !== 0 && tables) {
+        if(tempRes[0].value === "GP") {
+          if(tempRes[1].value === "Male") {
+            const gp = tempRec.filter(r => r.tag === "Male") 
+            tempTab[2].rows.push([gp[0].tag, gp[0].body])
+          } else if(tempRes[1].value === "Female") {
+            const gp = tempRec.filter(r => r.tag === "Female") 
+            tempTab[2].rows.push([gp[0].tag, gp[0].body])
+          } else {
+            const gp = tempRec.filter(r => r.tag === "GP") 
+            tempTab[2].rows.push([gp[0].tag, gp[0].body])
+          }
         }
-    
-        if(tempRes.length !== 0) {
-          if(tempRes[0].value === "GP") {
-            if(tempRes[1].value === "Male") {
-              const gp = tempRec.filter(r => r.tag === "Male") 
-              tempTab[2].rows.push([gp[0].tag, gp[0].body])
-            } else if(tempRes[1].value === "Female") {
-              const gp = tempRec.filter(r => r.tag === "Female") 
-              tempTab[2].rows.push([gp[0].tag, gp[0].body])
-            } else {
-              const gp = tempRec.filter(r => r.tag === "GP") 
-              tempTab[2].rows.push([gp[0].tag, gp[0].body])
-            }
-          }
-    
-          if(tempRes[2].value === "Therapist") {
-            const thera = tempRec.filter(r => r.tag === "Therapist") 
-            tempTab[2].rows.push([thera[0].tag, thera[0].body])    
-          }
-          if(tempRes[3].value === "Online") {
-            const online = tempRec.filter(r => r.tag === "Online") 
-            tempTab[2].rows.push([online[0].tag, online[0].body])    
-          }
-          if(tempRes[4].value === "Telephone") {
-            const tele = tempRec.filter(r => r.tag === "Telephone") 
-            tempTab[2].rows.push([tele[0].tag, tele[0].body])    
-          }
-    
-          setRecommendationsTable(tempTab[2])
+  
+        if(tempRes[2].value === "Therapist") {
+          const thera = tempRec.filter(r => r.tag === "Therapist") 
+          tempTab[2].rows.push([thera[0].tag, thera[0].body])    
         }
-      }, [resultsDQ])
+        if(tempRes[3].value === "Online") {
+          const online = tempRec.filter(r => r.tag === "Online") 
+          tempTab[2].rows.push([online[0].tag, online[0].body])    
+        }
+        if(tempRes[4].value === "Telephone") {
+          const tele = tempRec.filter(r => r.tag === "Telephone") 
+          tempTab[2].rows.push([tele[0].tag, tele[0].body])    
+        }
+  
+        setRecommendationsTable(tempTab[2])
+      }
+    }, [resultsDQ, tables, recommendations])
 
     return (
         <div>

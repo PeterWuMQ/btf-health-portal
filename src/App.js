@@ -11,10 +11,10 @@ import ResultsPage from './pages/ResultPage'
 
 function App() {
   const [questions, setQuestions] = useState([])
-  const [result, setResult] = useState(["-", "-", "-"])
+  const [result, setResult] = useState(JSON.parse(localStorage.getItem('results')))
   const [tables, setTables] = useState(null)
   const [directQuestions, setDirectQuestions] = useState([])
-  const [resultsDQ, setResultsDQ] = useState([])
+  const [resultsDQ, setResultsDQ] = useState(JSON.parse(localStorage.getItem('resultsDQ')))
   const [recommendations, setRecommendations] = useState([])
 
   useEffect(() => {
@@ -37,14 +37,22 @@ function App() {
     .then(data => {
       setRecommendations(data)
     })
+
+    setResult(JSON.parse(localStorage.getItem('results')))
   }, [])
+
+  useEffect(() => {
+    localStorage.setItem('results', JSON.stringify(result))
+    localStorage.setItem('resultsDQ', JSON.stringify(resultsDQ))
+  }, [result, resultsDQ])
+  
 
   return (
     <Router>
       <Routes>
         <Route path="/recommendations" element={<RecommendationPage tables={tables} resultsDQ={resultsDQ} recommendations={recommendations}/>} />
         <Route path="/questionnaire2" element={<DirectQuestionsPage questions={directQuestions} setResultsDQ={setResultsDQ}/>} />
-        <Route path="/results" element={<ResultsPage tables={tables} result={result}/>} />
+        <Route path="/results" element={<ResultsPage tables={tables} setTables={setTables} result={result}/>} />
         <Route path="/questionnaire" element={<QuestionnairePage questions={questions} tables={tables} setTables={setTables} setResult={setResult}/>} />
         <Route path="/" element={<HomePage />} />
       </Routes>
