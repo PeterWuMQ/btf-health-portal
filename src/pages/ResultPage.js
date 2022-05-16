@@ -6,6 +6,7 @@ import Button from '../components/Button'
 import Heading from '../components/text/Heading';
 import NormalText from '../components/text/NormalText';
 import Table from '../components/table/Table'
+import ShareModal from '../components/ShareModal';
 
 const ref = React.createRef()
 
@@ -45,7 +46,7 @@ function ResultsPage({ tables, result }) {
                 {({ toPdf }) => <Button onClick={toPdf}> Download </Button>}
             </Pdf>
 
-            <Button> Share </Button>
+            <ShareModal/>
 
             <NormalText>
                 If you feel like you would benefit from utilising a service relevant to you, please select "Next". If not, you can close this window, or go "Back Home".
