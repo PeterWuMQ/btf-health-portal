@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 function Input ({qid, type, tempAnswers, setAnswers, value}) {
     const [val, setVal] = useState(value)
     return (
-        <input type="text" value={val} minlength="4" maxlength="4" onChange={(event) => {
+        <input type="number" placeholder={val} minlength="4" maxlength="4" onChange={(event) => {
             const newArray = tempAnswers
             newArray[qid] = {type, value: event.target.value}
             setAnswers(newArray)
