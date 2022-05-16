@@ -12,9 +12,15 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
     useEffect(() => {
       console.log(resultsDQ)
 
-      const tempRec = recommendations
+      let tempRec = recommendations
       const tempRes = resultsDQ
       const tempTab = tables
+
+      if(tempRes[5].value === "0000") {
+        tempRec = tempRec.filter(r => r.postcode === "0000")
+      } else if (tempRes[5].value === "1111") {
+        tempRec = tempRec.filter(r => r.postcode === "1111")
+      }
       
       if(tables) {
         tempTab[2].rows = []
