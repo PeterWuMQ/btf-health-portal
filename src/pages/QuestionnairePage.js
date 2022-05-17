@@ -41,7 +41,7 @@ function QuestionnairePage ({questions, setResult}) {
 
             <form onSubmit={handleSubmit}>
                 <QuestionList questions={questions} answers={answers} setAnswers={setAnswers}></QuestionList>
-                <NormalButton type="submit" variant="outlined"> 
+                <NormalButton type="submit" variant="contained"> 
                     See Your Results 
                 </NormalButton>
             </form>
