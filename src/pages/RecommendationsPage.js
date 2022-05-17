@@ -10,7 +10,6 @@ import { Box, Grid, Paper } from '@mui/material';
 function RecommendationsPage ({tables, resultsDQ, recommendations}) {
     const [recommendationsTable, setRecommendationsTable] = useState(null)
     useEffect(() => {
-      console.log(resultsDQ)
       let tempRec = recommendations
       const tempRes = resultsDQ
       const tempTab = tables
@@ -44,7 +43,7 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
       } else if (tempRes[4].value === "Punjabi") {
         tempRec = tempRec.filter(r => r.language.includes("Punjabi"))
       }
-      
+
       if(tables) {
         tempTab[2].rows = []
       }
@@ -53,36 +52,45 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
         if(tempRes[0].value === "GP") {
           const gp = tempRec.filter(r => r.occupation === "GP") 
           let tempGP = gp.shift()
-          gp.map((g) => tempGP.body = tempGP.body + " \\n --------------------- \\n " + g.body)
-          tempTab[2].rows.push([tempGP.occupation, tempGP.body])
+          if(tempGP != null && gp) {
+            gp.map((g) => tempGP.body = tempGP.body + " \\n --------------------- \\n " + g.body)
+            tempTab[2].rows.push([tempGP.occupation, tempGP.body])
+          }
         }
         if(tempRes[1].value === "Counsellor") {
           const coun = tempRec.filter(r => r.occupation === "Counsellor") 
           let tempCoun = coun.shift()
-          coun.map((g) => tempCoun.body = tempCoun.body + " \\n --------------------- \\n " + g.body)
-          tempTab[2].rows.push([tempCoun.occupation, tempCoun.body])
+          if(tempCoun != null && coun) {
+            coun.map((g) => tempCoun.body = tempCoun.body + " \\n --------------------- \\n " + g.body)
+            tempTab[2].rows.push([tempCoun.occupation, tempCoun.body])
+          }
         }
         if(tempRes[2].value === "Psychologist") {
           const psy = tempRec.filter(r => r.occupation === "Psychologist") 
           let tempPsy = psy.shift()
-          psy.map((g) => tempPsy.body = tempPsy.body + " \\n --------------------- \\n " + g.body)
-          tempTab[2].rows.push([tempPsy.occupation, tempPsy.body])   
+          if(tempPsy != null && psy) {
+            psy.map((g) => tempPsy.body = tempPsy.body + " \\n --------------------- \\n " + g.body)
+            tempTab[2].rows.push([tempPsy.occupation, tempPsy.body])  
+          }
         }
         if(tempRes[2].value === "Online") {
           const on = tempRec.filter(r => r.occupation === "Online") 
           let tempON = on.shift()
-          on.map((g) => tempON.body = tempON.body + " \\n --------------------- \\n " + g.body)
-          tempTab[2].rows.push([tempON.occupation, tempON.body])   
+          if(tempON != null && on) {
+            on.map((g) => tempON.body = tempON.body + " \\n --------------------- \\n " + g.body)
+            tempTab[2].rows.push([tempON.occupation, tempON.body])   
+          }
         }
         if(tempRes[2].value === "Telephone") {
           const tele = tempRec.filter(r => r.occupation === "Telephone") 
           let tempTele = tele.shift()
-          tele.map((g) => tempTele.body = tempTele.body + " \\n --------------------- \\n " + g.body)
-          tempTab[2].rows.push([tempTele.occupation, tempTele.body])  
+          if(tempTele != null && tele) {
+            tele.map((g) => tempTele.body = tempTele.body + " \\n --------------------- \\n " + g.body)
+            tempTab[2].rows.push([tempTele.occupation, tempTele.body])  
+          }
         }
   
         setRecommendationsTable(tempTab[2])
-        console.log(tempTab[2])
       }
     }, [resultsDQ, tables, recommendations])
 
