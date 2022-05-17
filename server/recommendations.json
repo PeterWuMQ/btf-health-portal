@@ -109,14 +109,14 @@
         "body": "Name: Dr Kuldeep Sidhu \\n Phone Number: (02)9987 2226 \\n Address: The Madison Building Suite 1 LG 25/29 Hunter St Hornsby NSW 2077 \\n Website: https://hornsby.themadisonmedicalpractice.com.au"
     },{
         "id": 14,
-        "occupation":"Psychologists",
+        "occupation":"Psychologist",
         "postcode": "2077",
         "gender": "Female",
         "language": "English",
-        "body": "Name:  Ling Caslick \\n Phone Number: (02)9987 2626 \\n Address: Level 6 Suite 607 90 George Street Hornsby NSW 2077 \\n Website: https://www.hornsbycounselling.com.au"
+        "body": "Name: Ling Caslick \\n Phone Number: (02)9987 2626 \\n Address: Level 6 Suite 607 90 George Street Hornsby NSW 2077 \\n Website: https://www.hornsbycounselling.com.au"
     },{
         "id": 15,
-        "occupation":"Psychologists",
+        "occupation":"Psychologist",
         "postcode": "2077",
         "gender":"Male",
         "language": "English",
@@ -149,76 +149,110 @@
         "gender": "Male",
         "language": "English",
         "body": "Name: Stephanus Hugo \\n Phone Number: (02)9723 8111 \\n Address: 51 Smart Street Fairfield NSW 2165 \\n Website: https://fairfieldcentralmedical.com.au/"
-
     },{
         "id": 20,
-        "occupation":"telephone",
-        "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "occupation":"Psychologist",
+        "postcode": "2165",
+        "gender": "Male",
+        "language": "English",
+        "body": "Name: Andrew McKinley \\n Phone Number: (02)9726 1189 \\n Address: Shop 3 37-41 Ware Street Fairfield NSW 2165 \\n Website: https://www.hotdoc.com.au/medical-centres/fairfield-NSW-2165/ware-street-medical-centre/doctors"
     },{
-        "id": 17,
-        "occupation":"telephone",
-        "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "id": 21,
+        "occupation":"Psychologist",
+        "postcode": "2165",
+        "gender": "Female",
+        "language": "English Cantonese Mandarin",
+        "body": "Name: Betty Lew \\n Phone Number: (02)9723 8111 \\n Address: 51 Smart Street Fairfield NSW 2165 \\n Website: https://fairfieldcentralmedical.com.au/"
     },{
-        "id": 17,
-        "occupation":"telephone",
-        "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "id": 22,
+        "occupation":"Counsellor",
+        "postcode": "2165",
+        "gender": "Female",
+        "language": "English",
+        "body": "Name: Joyless Nowrot \\n Phone Number: (02)8772 9559\\n Address: Level 1 41 Court Road Fairfield NSW 2165 \\n Website: https://www.psychorium.com"
     },{
-        "id": 17,
-        "occupation":"telephone",
-        "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "id": 23,
+        "occupation":"GP",
+        "postcode": "2067",
+        "gender": "Female",
+        "language": "English",
+        "body": "Name: Ching-Ling Yeng \\n Phone Number: (02)8208 8886 \\n Address: Shop B-046A Lower Ground Floor Chatswood Chase Shopping Centre Chatswood NSW 2067 \\n Website: https://myhealth.net.au/chatswood-chase/"
     },{
-        "id": 17,
-        "occupation":"telephone",
-        "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "id": 24,
+        "occupation":"GP",
+        "postcode": "2067",
+        "gender": "Male",
+        "language": "English, Mandarin",
+        "body": "Name: Gary Wu \\n Phone Number: (02)9413 2222 \\n Address: 270 Victoria Avenue Chatswood NSW 2067 \\n Website: http://www.chatswoodmedicalanddental.com.au/"
     },{
-        "id": 17,
-        "occupation":"telephone",
-        "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "id": 25,
+        "occupation":"Psychologist",
+        "postcode": "2067",
+        "gender": "Female",
+        "language":"English",
+        "body": "Name: Alex Whyburn \\n Phone Number: (02)9100 0856 \\n Address: Mind Check Psychologists 231/1 Katherine Street Chatswood NSW 2067 \\n Website: https://www.mindcheckpsych.com.au/"
     },{
-        "id": 17,
-        "occupation":"telephone",
-        "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "id": 26,
+        "occupation":"Psychologist",
+        "postcode": "2067",
+        "gender": "Female",
+        "language": "English",
+        "body": "Name: Karin Attewell \\n Phone Number: 0414 999 462 \\n 16-18 Malvern Ave Chatswood NSW 2067 \\n Website: https://thinkwell.org.au/"
     },{
-        "id": 17,
-        "occupation":"telephone",
-        "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "id": 27,
+        "occupation":"Counsellor",
+        "postcode": "2067",
+        "gender": "Female",
+        "language": "English Korean",
+        "body": "Name: Christine Kim \\n Phone Number: (02)8806 0035 \\n Address: MindTalk Counselling Level 6 10 Help St Chatswood NSW 2067 \\n Website: https://mindtalkcounselling.com.au/#home"
     },{
-        "id": 17,
-        "occupation":"telephone",
-        "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "id": 28,
+        "occupation":"Counsellor",
+        "postcode": "2067",
+        "gender": "Female",
+        "language": "English Malaysian Mandarin",
+        "body": "Name: Vonnie Ho \\n Phone Number: 0421 403 773 \\n Address: Sprouting Hope Counselling Suite 2 104 Victoria Avenue Chatswood NSW 2067 \\n Website: https://www.sproutinghopecounselling.com/"
     },{
-        "id": 9,
-        "occupation":"online",
+        "id": 29,
+        "occupation":"Telephone",
         "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "gender": "",
+        "language": "",
+        "body": "Name: Headspace \\n Phone Number: 1800 650 890"
+    },{
+        "id": 30,
+        "occupation":"Telephone",
+        "postcode": "",
+        "gender": "Male",
+        "language": "",
+        "body": "Name: MensLine \\n Phone Number: 1300 78 99 78"
+    },{
+        "id": 31,
+        "occupation":"Telephone",
+        "postcode": "",
+        "gender": "",
+        "language": "",
+        "body": "Name: BeyondBlue \\n Phone Number: 1300 22 4636"
+    },{
+        "id": 32,
+        "occupation":"Online",
+        "postcode": "",
+        "gender": "",
+        "language": "",
+        "body": "Name: BeyondBlue \\n Website: https://www.beyondblue.org.au"
+    },{
+        "id": 33,
+        "occupation":"Online",
+        "postcode": "",
+        "gender": "",
+        "language": "",
+        "body": "Name: Headspace \\n Website: https://www.headspace.com"
+    },{
+        "id": 34,
+        "occupation":"Online",
+        "postcode": "",
+        "gender": "",
+        "language": "",
+        "body": "Name: Better Help \\n Website: https://www.betterhelp.com"
     }
 ]

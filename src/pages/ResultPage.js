@@ -21,61 +21,70 @@ function ResultsPage({ tables, result }) {
     }, [result, setResultTable, tables])
 
     return (
-        <Box pt={10}>
-            <Grid container spacing={4}>
-                <Grid item>
-                    <Paper elevation={10}>
-                        <Box pt={4} pb={4} pl={6} pr={6}>
-                            <Box  pt={3}>
-                                <Text variant={"h1"}>
-                                    Your Results
-                                </Text>
+        <div>
+                <Box pt={10}>
+                <Grid container spacing={4}>
+                    <Grid item>
+                        <Paper elevation={10}>
+                            <Box pt={4} pb={4} pl={6} pr={6}>
+                            <div ref={ref}>
+                                <Box  pt={3}>
+                                    <Text variant={"h1"}>
+                                        Your Results
+                                    </Text>
                             
-
-                                {resultTable ? <NormalTable headings={resultTable.headings} rows={resultTable.rows} />
-                                : <></>}
-
-                            </Box>
-                            <Box pt={6} pb={4}>
-                                <Text variant={"h2"}>
-                                    Results Guide
-                                </Text>
-
-                                {tables ? <NormalTable headings={tables.filter(t => t.id === 1)[0].headings} rows={tables.filter(t => t.id === 1)[0].rows} result={tables.filter(t => t.id === 0)[0].rows} />
+                                    {resultTable ? <NormalTable headings={resultTable.headings} rows={resultTable.rows} />
                                     : <></>}
-                            </Box>
-                            <Box pb={3}>
-                                <Text>
-                                    If you would like to download a copy of your results:
-                                </Text>
-                            </Box>
-                            <Box pb={3}>
-                                <Box pb= {1}>
-                                    <Pdf targetRef={ref} filename="DASS-21 Results">
-                                    {({ toPdf }) => <NormalButton onClick={toPdf} variant="contained"> Download </NormalButton>}
-                                    </Pdf>
+
                                 </Box>
-                                <ShareModal/>
-                            </Box>
-                            <Box>
+                                <Box pt={6} pb={4}>
+                                    <Text variant={"h2"}>
+                                        Results Guide
+                                    </Text>
+
+                                    {tables ? <NormalTable headings={tables.filter(t => t.id === 1)[0].headings} rows={tables.filter(t => t.id === 1)[0].rows} result={tables.filter(t => t.id === 0)[0].rows} />
+                                        : <></>}
+                                </Box>
+                                </div>
                                 <Box pb={3}>
                                     <Text>
-                                        If you feel like you would benefit from utilising a service relevant to you, please select "Next". If not, you can close this window, or go "Back Home".
+                                        If you would like to download a copy of your results:
                                     </Text>
                                 </Box>
-                                <Link to="/" style={{ textDecoration: 'none' }}>
-                                    <NormalButton variant="contained"> Back Home </NormalButton>
-                                </Link>
-
-                                <Link to="/questionnaire2" style={{ textDecoration: 'none' }}>
-                                    <NormalButton variant="contained"> Next </NormalButton>
-                                </Link>
+                                <Box pb={3}>
+                                    <Box pb= {1}>
+                                        <Pdf targetRef={ref} filename="DASS-21 Results">
+                                        {({ toPdf }) => <NormalButton onClick={toPdf} variant="contained"> Download </NormalButton>}
+                                        </Pdf>
+                                    </Box>
+                                    <ShareModal/>
+                                </Box>
+                                <Box>
+                                    <Box pb={3}>
+                                        <Text>
+                                            If you feel like you would benefit from utilising a service relevant to you, please select "Next". If not, you can close this window, or go "Back Home".
+                                        </Text>
+                                    </Box>
+                                    <Grid container spacing={1}>
+                                        <Grid item>
+                                            <Link to="/" style={{ textDecoration: 'none' }}>
+                                                <NormalButton variant="contained"> Back Home </NormalButton>
+                                            </Link>
+                                        </Grid>
+                                        <Grid item>
+                                            <Link to="/questionnaire2" style={{ textDecoration: 'none' }}>
+                                                <NormalButton variant="contained"> Next </NormalButton>
+                                            </Link>
+                                        </Grid>
+                                    </Grid>
+                                </Box>
                             </Box>
-                        </Box>
-                    </Paper>
+                        </Paper>
+                    </Grid>
                 </Grid>
-            </Grid>
-        </Box>
+            </Box>
+            
+        </div>
     )
 }
 
