@@ -1,45 +1,48 @@
 [
     {
         "id": 0,
-        "type": "mcfu",
-        "question": "Would you like to speak to a GP?",
+        "type": "mc",
+        "question": "Would you prefer to see a GP?",
         "answers": [["GP", "Yes"], 
                     ["No", "No"]]      
     },
     {
         "id": 1,
         "type": "mc",
-        "label": "Language",
-        "question": "If yes to the above, would you prefer to see a GP of a particular gender?",
-        "answers": [["No", "No"], 
-                    ["Male", "Male"], 
-                    ["Female", "Female"]]        
+        "question": "Would you prefer to see a Counsellor?",
+        "answers": [["Counsellor", "Yes"], 
+                    ["No", "No"]]      
     },
     {
         "id": 2,
-        "question": "If yes to the above, would you prefer to see a GP of a particular gender?",
-        "answers": [["No", "No"], 
-                    ["Male", "Male"], 
-                    ["Female", "Female"]]        
+        "type": "mc",
+        "question": "Would you prefer to see a Psychologist?",
+        "answers": [["Psychologist", "Yes"], 
+                    ["No", "No"]]      
     },
     {
-        "id": 3,
-        "type": "mc",
-        "question": "Would you be open to seeing a therapist, such as a counsellor or psychologist?",
-        "answers": [["Therapist", "Yes"], 
-                    ["No", "No"]]
+        "id": 1,
+        "type": "dd",
+        "label": "Language",
+        "question": "Would you prefer to communicate in a specific Language besides English?",
+        "answers": [["No", "No"], 
+                    ["Mandarin", "Mandarin"],
+                    ["Cantonese", "Cantonese"],
+                    ["Malaysian", "Malaysian"],
+                    ["Hindi", "Hindi"],
+                    ["Punjabi", "Punjabi"]]        
     },
     {
         "id": 4,
         "type": "mc",
-        "question": "Would you like to use an online service, such as BeyondBlue, BetterHelp etc.?",
+        "question": "Would you prefer to use an online service, such as BeyondBlue, BetterHelp etc.?",
         "answers": [["Online", "Yes"], 
                     ["No", "No"]]
     },
     {
         "id": 5,
         "type": "mc",
-        "question": "Would you like a list of telephone support services and reach out to them yourself?",
+        "question": "Would you prefer to call a service?",
         "answers": [["Telephone", "Yes"], 
                     ["No", "No"]]
     },

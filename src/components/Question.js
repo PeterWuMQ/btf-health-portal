@@ -25,8 +25,7 @@ function Question ({qid, question, tempAnswers, answers, setAnswers, type}) {
                     setAnswers(newArray)
                     }}
                 >
-                {answers.map((a, i) => {
-                    console.log(a)
+                {answers.map((a) => {
                     return <FormControlLabel value={a[0]} control={<Radio/>} label={a[1]}/> 
                 })}
                 </RadioGroup>

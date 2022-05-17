@@ -9,6 +9,7 @@ import NormalTable from '../components/NormalTable';
 function RecommendationsPage ({tables, resultsDQ, recommendations}) {
     const [recommendationsTable, setRecommendationsTable] = useState(null)
     useEffect(() => {
+      console.log(resultsDQ)
       let tempRec = recommendations
       const tempRes = resultsDQ
       const tempTab = tables
