@@ -149,30 +149,29 @@
         "gender": "Male",
         "language": "English",
         "body": "Name: Stephanus Hugo \\n Phone Number: (02)9723 8111 \\n Address: 51 Smart Street Fairfield NSW 2165 \\n Website: https://fairfieldcentralmedical.com.au/"
-
     },{
         "id": 20,
-        "occupation":"telephone",
-        "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "occupation":"Psychologist",
+        "postcode": "2165",
+        "gender":"Male",
+        "language": "English",
+        "body": "Name: Andrew McKinley \\n Phone Number: (02)9726 1189 \\n Address: Shop 3 37-41 Ware Street Fairfield NSW 2165 \\n Website: https://www.hotdoc.com.au/medical-centres/fairfield-NSW-2165/ware-street-medical-centre/doctors"
     },{
-        "id": 17,
-        "occupation":"telephone",
-        "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "id": 21,
+        "occupation":"Psychologist",
+        "postcode": "2165",
+        "gender":"Female",
+        "language": "English Cantonese Mandarin",
+        "body": "Name: Betty Lew \\n Phone Number: (02)9723 8111 \\n Address: 51 Smart Street Fairfield NSW 2165 \\n Website: https://fairfieldcentralmedical.com.au/"
     },{
-        "id": 17,
-        "occupation":"telephone",
-        "postcode": "",
-        "gender":"",
-        "language":[],
-        "body": ["Online 1"]
+        "id": 22,
+        "occupation":"Counsellor",
+        "postcode": "2165",
+        "gender":"Female",
+        "language":"English",
+        "body": "Name: Joyless Nowrot \\n Phone Number: (02)8772 9559\\n Address: Level 1 41 Court Road Fairfield NSW 2165 \\n Website: https://www.psychorium.com"
     },{
-        "id": 17,
+        "id": 23,
         "occupation":"telephone",
         "postcode": "",
         "gender":"",
