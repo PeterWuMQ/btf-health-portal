@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 
+import { Input } from '@mui/material';
 
-function Input ({qid, type, tempAnswers, setAnswers, value}) {
+function NormalInput ({qid, type, tempAnswers, setAnswers, value}) {
     const [val, setVal] = useState(value)
     return (
-        <input type="number" placeholder={val} minlength="4" maxlength="4" onChange={(event) => {
+        <Input type="number" placeholder={val} minlength="4" maxlength="4" onChange={(event) => {
             const newArray = tempAnswers
             newArray[qid] = {type, value: event.target.value}
             setAnswers(newArray)
-            setVal(event.target.value)}}></input>
+            setVal(event.target.value)}}></Input>
     )
 }
 
-export default Input
+export default NormalInput

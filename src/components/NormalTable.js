@@ -1,4 +1,4 @@
-import { TableContainer, TableHead, TableRow, Table, TableCell, TableBody } from '@mui/material';
+import { TableContainer, TableHead, TableRow, Table, TableCell, TableBody, Typography } from '@mui/material';
 import React from 'react';
 
 function NormalTable ({headings, rows, result}) {
@@ -23,7 +23,7 @@ function NormalTable ({headings, rows, result}) {
                                             return <TableCell style={{backgroundColor: colour, color: 'black',}}> {t} </TableCell>
                                         }
                                     }
-                                return <TableCell> {t} </TableCell>
+                                return <TableCell> {t.split("\\n").map((p) => <Typography> {p} </Typography>)} </TableCell>
                                 }
                             )}
                         </TableRow>})}

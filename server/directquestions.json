@@ -8,6 +8,8 @@
     },
     {
         "id": 1,
+        "type": "mc",
+        "label": "Language",
         "question": "If yes to the above, would you prefer to see a GP of a particular gender?",
         "answers": [["No", "No"], 
                     ["Male", "Male"], 
@@ -15,27 +17,34 @@
     },
     {
         "id": 2,
+        "question": "If yes to the above, would you prefer to see a GP of a particular gender?",
+        "answers": [["No", "No"], 
+                    ["Male", "Male"], 
+                    ["Female", "Female"]]        
+    },
+    {
+        "id": 3,
         "type": "mc",
         "question": "Would you be open to seeing a therapist, such as a counsellor or psychologist?",
         "answers": [["Therapist", "Yes"], 
                     ["No", "No"]]
     },
     {
-        "id": 3,
+        "id": 4,
         "type": "mc",
         "question": "Would you like to use an online service, such as BeyondBlue, BetterHelp etc.?",
         "answers": [["Online", "Yes"], 
                     ["No", "No"]]
     },
     {
-        "id": 4,
+        "id": 5,
         "type": "mc",
         "question": "Would you like a list of telephone support services and reach out to them yourself?",
         "answers": [["Telephone", "Yes"], 
                     ["No", "No"]]
     },
     {
-        "id": 5,
+        "id": 6,
         "type": "tb",
         "question": "If you would like services around your location, please enter your postcode",
         "answers": [["0000", "Enter PostCode Here"]]

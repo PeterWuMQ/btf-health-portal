@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FormControlLabel, Radio, RadioGroup } from '@mui/material';
 import Input from './Input';
-import Select from './Select';
+import Select from './NormalSelect';
 
 
 function Question ({qid, question, tempAnswers, answers, setAnswers, type}) {

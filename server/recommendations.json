@@ -3,60 +3,60 @@
         "id": 0,
         "tag": "Male",
         "postcode": "0000",
-        "body": ["Male 0", "Male"]
+        "body": "Male 0 \\n Male"
     },
     {
         "id": 1,
         "tag": "GP",
         "postcode": "0000",
-        "body": ["GP 0", "GP", "GP", "GP"]
+        "body": "GP 0 \\n GP \\n GP \\n GP"
     },
     {
         "id": 2,
         "tag": "Therapist",
         "postcode": "0000",
-        "body": ["Therapist 0", "Therapist"]
+        "body": "Therapist 0 \\n Therapist"
     },
     {
         "id": 3,
         "tag": "Online",
         "postcode": "0000",
-        "body": ["Online 0"]
+        "body": "Online 0"
     },
     {
         "id": 4,
         "tag": "Telephone",
         "postcode": "0000",
-        "body": ["Telephone 0", "Telephone", "Telephone"]
+        "body": "Telephone 0 \\n Telephone \\n Telephone"
     },
     {
         "id": 0,
         "tag": "Male",
         "postcode": "1111",
-        "body": ["Male 1", "Male"]
+        "body": "Male 1 \\n Male"
     },
     {
         "id": 1,
         "tag": "GP",
         "postcode": "1111",
-        "body": ["GP 1", "GP", "GP", "GP"]
+        "body": "GP 1 \\n GP \\n GP \\n GP"
     },
     {
         "id": 2,
         "tag": "Therapist",
         "postcode": "1111",
-        "body": ["Therapist 1", "Therapist"]
+        "body": "Therapist 1 \\n Therapist"
     },
     {
         "id": 3,
         "tag": "Online",
         "postcode": "1111",
-        "body": ["Online 1"]
+        "body": "Online 1"
     },
     {
         "id": 4,
         "tag": "Telephone",
         "postcode": "1111",
-        "body": ["Telephone 1", "Telephone", "Telephone"]
+        "body": "Telephone 1 \\n Telephone \\n Telephone"
     }
 ]
