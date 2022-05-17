@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import NormalButton from '../components/NormalButton';
 import Text from '../components/Text';
-import QuestionList from '../components/lists/QuestionList';
+import QuestionList from '../components/QuestionList';
 
 
 function QuestionnairePage ({questions, setResult, tables, setTables}) {
@@ -41,7 +41,7 @@ function QuestionnairePage ({questions, setResult, tables, setTables}) {
 
             <form onSubmit={handleSubmit}>
                 <QuestionList questions={questions} answers={answers} setAnswers={setAnswers}></QuestionList>
-                <NormalButton type="submit" variant="outlined"> 
+                <NormalButton type="submit" variant="contained"> 
                     See Your Results 
                 </NormalButton>
             </form>
