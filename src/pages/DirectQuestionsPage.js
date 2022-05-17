@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import Button from '../components/Button';
+import NormalButton from '../components/NormalButton';
 import Heading from '../components/text/Heading';
 import QuestionList from '../components/lists/QuestionList';
 import Subheading from '../components/text/Subheading';
@@ -39,9 +39,9 @@ function DirectQuestionsPage ({questions, setResultsDQ}) {
             </Subheading>
             <form onSubmit={handleSubmit}>
                 <QuestionList questions={questions} answers={answers} setAnswers={setAnswers}></QuestionList>
-                <Button type="submit"> 
+                <NormalButton type="submit" variant="outlined"> 
                     Find Services
-                </Button>
+                </NormalButton>
             </form>
         </div>
     )

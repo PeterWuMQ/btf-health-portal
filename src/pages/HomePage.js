@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Button from '../components/Button';
+import NormalButton from '../components/NormalButton';
 import Heading from '../components/text/Heading';
 import NormalText from '../components/text/NormalText';
 import Subheading from '../components/text/Subheading';
@@ -18,8 +18,8 @@ function HomePage ({...props}) {
                 Take the quiz today!
             </Subheading> 
 
-            <Link to="/questionnaire">
-                <Button> BEGIN </Button>
+            <Link to="/questionnaire" style={{ textDecoration: 'none' }}>
+                <NormalButton variant="outlined"> BEGIN </NormalButton>
             </Link>
 
             <Subheading>

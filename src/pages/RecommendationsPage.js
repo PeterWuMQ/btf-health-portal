@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import Button from '../components/Button';
+import NormalButton from '../components/NormalButton';
 import Heading from '../components/text/Heading';
 import NormalText from '../components/text/NormalText';
 import Table from '../components/table/Table';
@@ -73,8 +73,8 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
             {recommendationsTable ? <Table headings={recommendationsTable.headings} rows={recommendationsTable.rows}/>
             : <></>}
 
-            <Link to="/">
-                <Button> Back Home </Button>
+            <Link to="/" style={{ textDecoration: 'none' }}>
+                <NormalButton variant="outlined"> Back Home </NormalButton>
             </Link>
         </div>
     )

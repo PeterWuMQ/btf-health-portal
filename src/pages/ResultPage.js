@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Pdf from 'react-to-pdf'
 
-import Button from '../components/Button'
+import NormalButton from '../components/NormalButton'
 import Heading from '../components/text/Heading';
 import NormalText from '../components/text/NormalText';
 import Table from '../components/table/Table'
@@ -43,7 +43,7 @@ function ResultsPage({ tables, result }) {
             </NormalText>
 
             <Pdf targetRef={ref} filename="DASS-21 Results">
-                {({ toPdf }) => <Button onClick={toPdf}> Download </Button>}
+                {({ toPdf }) => <NormalButton onClick={toPdf} variant="outlined"> Download </NormalButton>}
             </Pdf>
 
             <ShareModal/>
@@ -52,12 +52,14 @@ function ResultsPage({ tables, result }) {
                 If you feel like you would benefit from utilising a service relevant to you, please select "Next". If not, you can close this window, or go "Back Home".
             </NormalText>
 
-            <Link to="/questionnaire2">
-                <Button> Next </Button>
+            <Link to="/" style={{ textDecoration: 'none' }}>
+                <NormalButton variant="outlined"> Back Home </NormalButton>
             </Link>
-            <Link to="/">
-                <Button> Back Home </Button>
+
+            <Link to="/questionnaire2" style={{ textDecoration: 'none' }}>
+                <NormalButton variant="outlined" > Next </NormalButton>
             </Link>
+            
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-import Button from '../components/Button';
+import NormalButton from '../components/NormalButton';
 import Heading from '../components/text/Heading';
 import NormalText from '../components/text/NormalText';
 import QuestionList from '../components/lists/QuestionList';
@@ -42,9 +42,9 @@ function QuestionnairePage ({questions, setResult, tables, setTables}) {
 
             <form onSubmit={handleSubmit}>
                 <QuestionList questions={questions} answers={answers} setAnswers={setAnswers}></QuestionList>
-                <Button type="submit"> 
+                <NormalButton type="submit" variant="outlined"> 
                     See Your Results 
-                </Button>
+                </NormalButton>
             </form>
         </div>
     )
