@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FormControlLabel, Radio, RadioGroup } from '@mui/material';
 import Input from './Input';
-import Select from './Select';
+import Select from './NormalSelect';
 
 
 function Question ({qid, question, tempAnswers, answers, setAnswers, type}) {
@@ -25,8 +25,7 @@ function Question ({qid, question, tempAnswers, answers, setAnswers, type}) {
                     setAnswers(newArray)
                     }}
                 >
-                {answers.map((a, i) => {
-                    console.log(a)
+                {answers.map((a) => {
                     return <FormControlLabel value={a[0]} control={<Radio/>} label={a[1]}/> 
                 })}
                 </RadioGroup>

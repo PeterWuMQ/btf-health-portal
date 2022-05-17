@@ -7,7 +7,7 @@ import QuestionList from '../components/QuestionList';
 import { Box, Grid, Paper } from '@mui/material';
 
 
-function QuestionnairePage ({questions, setResult, tables, setTables}) {
+function QuestionnairePage ({questions, setResult}) {
     const [answers, setAnswers] = useState([]) 
     const navigate = useNavigate();
    

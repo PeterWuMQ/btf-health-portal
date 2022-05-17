@@ -11,15 +11,38 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
     const [recommendationsTable, setRecommendationsTable] = useState(null)
     useEffect(() => {
       console.log(resultsDQ)
-
       let tempRec = recommendations
       const tempRes = resultsDQ
       const tempTab = tables
 
-      if(tempRes[5].value === "0000") {
-        tempRec = tempRec.filter(r => r.postcode === "0000")
-      } else if (tempRes[5].value === "1111") {
-        tempRec = tempRec.filter(r => r.postcode === "1111")
+      if(tempRes[7].value === "2067") {
+        tempRec = tempRec.filter(r => r.postcode === "2067")
+      } else if (tempRes[7].value === "2154") {
+        tempRec = tempRec.filter(r => r.postcode === "2154")
+      } else if (tempRes[7].value === "2220") {
+        tempRec = tempRec.filter(r => r.postcode === "2220")
+      } else if (tempRes[7].value === "2077") {
+        tempRec = tempRec.filter(r => r.postcode === "2077")
+      } else if (tempRes[7].value === "2165") {
+        tempRec = tempRec.filter(r => r.postcode === "2165")
+      }
+
+      if(tempRes[3].value === "Female") {
+        tempRec = tempRec.filter(r => r.gender === "Female")
+      } else if (tempRes[3].value === "Male") {
+        tempRec = tempRec.filter(r => r.gender === "Male")
+      } 
+
+      if(tempRes[4].value === "Mandarin") {
+        tempRec = tempRec.filter(r => r.language.includes("Mandarin"))
+      } else if (tempRes[4].value === "Cantonese") {
+        tempRec = tempRec.filter(r => r.language.includes("Cantonese"))
+      } else if (tempRes[4].value === "Malaysian") {
+        tempRec = tempRec.filter(r => r.language.includes("Malaysian"))
+      } else if (tempRes[4].value === "Hindi") {
+        tempRec = tempRec.filter(r => r.language.includes("Hindi"))
+      } else if (tempRes[4].value === "Punjabi") {
+        tempRec = tempRec.filter(r => r.language.includes("Punjabi"))
       }
       
       if(tables) {
@@ -28,32 +51,22 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
   
       if(tempRes.length !== 0 && tables) {
         if(tempRes[0].value === "GP") {
-          if(tempRes[1].value === "Male") {
-            const gp = tempRec.filter(r => r.tag === "Male") 
-            tempTab[2].rows.push([gp[0].tag, gp[0].body])
-          } else if(tempRes[1].value === "Female") {
-            const gp = tempRec.filter(r => r.tag === "Female") 
-            tempTab[2].rows.push([gp[0].tag, gp[0].body])
-          } else {
-            const gp = tempRec.filter(r => r.tag === "GP") 
-            tempTab[2].rows.push([gp[0].tag, gp[0].body])
-          }
+          const gp = tempRec.filter(r => r.occupation === "GP") 
+          console.log(tempRec)
+          console.log(gp)
+          gp.map((g) => tempTab[2].rows.push([g.occupation, g.body]))
         }
-  
-        if(tempRes[2].value === "Therapist") {
-          const thera = tempRec.filter(r => r.tag === "Therapist") 
-          tempTab[2].rows.push([thera[0].tag, thera[0].body])    
+        if(tempRes[1].value === "Counsellor") {
+          const coun = tempRec.filter(r => r.occupation === "Counsellor") 
+          coun.map((g) => tempTab[2].rows.push([g.occupation, g.body]))
         }
-        if(tempRes[3].value === "Online") {
-          const online = tempRec.filter(r => r.tag === "Online") 
-          tempTab[2].rows.push([online[0].tag, online[0].body])    
-        }
-        if(tempRes[4].value === "Telephone") {
-          const tele = tempRec.filter(r => r.tag === "Telephone") 
-          tempTab[2].rows.push([tele[0].tag, tele[0].body])    
+        if(tempRes[2].value === "Psychologist") {
+          const psy = tempRec.filter(r => r.occupation === "Psychologist") 
+          psy.map((g) => tempTab[2].rows.push([g.occupation, g.body]))    
         }
   
         setRecommendationsTable(tempTab[2])
+        console.log(tempTab[2])
       }
     }, [resultsDQ, tables, recommendations])
 
