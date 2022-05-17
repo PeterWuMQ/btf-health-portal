@@ -73,7 +73,7 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
             : <></>}
 
             <Link to="/" style={{ textDecoration: 'none' }}>
-                <NormalButton variant="outlined"> Back Home </NormalButton>
+                <NormalButton variant="contained"> Back Home </NormalButton>
             </Link>
         </div>
     )

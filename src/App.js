@@ -10,6 +10,9 @@ import QuestionnairePage from './pages/QuestionnairePage'
 import RecommendationPage from './pages/RecommendationsPage'
 import ResultsPage from './pages/ResultPage'
 
+import { Container } from '@mui/material';
+import Paper from '@mui/material/Paper';
+
 function App() {
   const [questions, setQuestions] = useState([])
   const [result, setResult] = useState(JSON.parse(localStorage.getItem('results')))
@@ -19,6 +22,26 @@ function App() {
   const [recommendations, setRecommendations] = useState([])
 
   const THEME = createTheme({
+    
+    components: {
+      MuiButton: {
+          styleOverrides: {
+              root: {
+                  border: '1px solid #ff4742',
+                  background: '#b5d9ff',
+                  borderRadius: 12,
+                  border: 0,
+                  color: 'black',
+                  height: 48,
+                  padding: '0 30px',
+                  fontWeight: 'bold',
+                  boxShadow: '1px 2px 4px rgb(0 0 0 / 10%)',
+              }
+          }
+      }
+    },
+
+   
     typography: {
       fontFamily: "QuickSand",
       h1: {
@@ -70,15 +93,17 @@ function App() {
 
   return (
     <ThemeProvider theme={THEME}>
-      <Router>
-        <Routes>
-          <Route path="/recommendations" element={<RecommendationPage tables={tables} resultsDQ={resultsDQ} recommendations={recommendations}/>} />
-          <Route path="/questionnaire2" element={<DirectQuestionsPage questions={directQuestions} setResultsDQ={setResultsDQ}/>} />
-          <Route path="/results" element={<ResultsPage tables={tables} setTables={setTables} result={result}/>} />
-          <Route path="/questionnaire" element={<QuestionnairePage questions={questions} tables={tables} setTables={setTables} setResult={setResult}/>} />
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </Router>
+      <Container maxWidth="lg">
+        <Router>
+          <Routes>
+            <Route path="/recommendations" element={<RecommendationPage tables={tables} resultsDQ={resultsDQ} recommendations={recommendations}/>} />
+            <Route path="/questionnaire2" element={<DirectQuestionsPage questions={directQuestions} setResultsDQ={setResultsDQ}/>} />
+            <Route path="/results" element={<ResultsPage tables={tables} setTables={setTables} result={result}/>} />
+            <Route path="/questionnaire" element={<QuestionnairePage questions={questions} tables={tables} setTables={setTables} setResult={setResult}/>} />
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </Router>
+      </Container>
     </ThemeProvider>
   );
 }

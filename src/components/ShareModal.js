@@ -14,7 +14,7 @@ function ShareModal ({...props}) {
 
     return (
         <div>
-            <Button variant="outlined" onClick={handleClickOpen}>
+            <Button variant="contained" onClick={handleClickOpen}>
                 Share
             </Button>
             <Dialog open={open} onClose={handleClose}>

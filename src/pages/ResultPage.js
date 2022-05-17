@@ -42,7 +42,7 @@ function ResultsPage({ tables, result }) {
             </Text>
 
             <Pdf targetRef={ref} filename="DASS-21 Results">
-                {({ toPdf }) => <NormalButton onClick={toPdf} variant="outlined"> Download </NormalButton>}
+                {({ toPdf }) => <NormalButton onClick={toPdf} variant="contained"> Download </NormalButton>}
             </Pdf>
 
             <ShareModal/>
@@ -52,11 +52,11 @@ function ResultsPage({ tables, result }) {
             </Text>
 
             <Link to="/" style={{ textDecoration: 'none' }}>
-                <NormalButton variant="outlined"> Back Home </NormalButton>
+                <NormalButton variant="contained"> Back Home </NormalButton>
             </Link>
 
             <Link to="/questionnaire2" style={{ textDecoration: 'none' }}>
-                <NormalButton variant="outlined" > Next </NormalButton>
+                <NormalButton variant="contained" > Next </NormalButton>
             </Link>
             
         </div>
