@@ -88,7 +88,7 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
 
     return (
         <div>
-          <Box pt={10}>
+          <Box pt={10} pb={10}>
             <Grid container spacing={4}>
               <Grid item>
                 <Paper>

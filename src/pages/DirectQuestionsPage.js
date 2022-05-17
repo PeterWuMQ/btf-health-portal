@@ -30,7 +30,7 @@ function DirectQuestionsPage ({questions, setResultsDQ}) {
 
     return (
         <div>
-            <Box pt={10}>
+            <Box pt={10} pb={10}>
                 <Grid container spacing={4}>
                     <Grid>
                         <Paper>
