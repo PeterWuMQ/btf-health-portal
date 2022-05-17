@@ -1,26 +1,35 @@
 import React from 'react';
 
-import Answer from './Answer';
+import { FormControlLabel, Radio, RadioGroup } from '@mui/material';
 import Input from './Input';
 import Select from './Select';
-import Text from './Text';
 
 
 function Question ({qid, question, tempAnswers, answers, setAnswers, type}) {
     const option = qid + "option"
     return (
         <div>
-            <Text variant={"h3"}>
+            <p>
                 {question}
-            </Text>
+            </p>
             {type === "dd" 
             ? <Select name={option} id={qid} answers={answers} type={""} tempAnswers={tempAnswers} setAnswers={setAnswers}/>
             : type === "tb" 
             ? <Input qid={qid} type={type} tempAnswers={tempAnswers} setAnswers={setAnswers} value={answers[0][1]}/>
-            : answers.map((a, i) => {
-                const id = qid + "." + i
-                return <Answer key={i} id={id} name={option} tempAnswers={tempAnswers} setAnswers={setAnswers} qid={qid} type={type} value={a[0]} checked={i === 0 ? true : false}> {a[1]} </Answer>
-                })
+            : <RadioGroup
+                defaultValue={answers[0][0]}
+                name={option}
+                onChange={(event) => {
+                    const newArray = tempAnswers
+                    newArray[qid] = {type, value: event.target.value}
+                    setAnswers(newArray)
+                    }}
+                >
+                {answers.map((a, i) => {
+                    console.log(a)
+                    return <FormControlLabel value={a[0]} control={<Radio/>} label={a[1]}/> 
+                })}
+                </RadioGroup>
             }
         </div>
     )
