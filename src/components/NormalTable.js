@@ -23,7 +23,7 @@ function NormalTable ({headings, rows, result}) {
                                             return <TableCell style={{backgroundColor: colour, color: 'black',}}> {t} </TableCell>
                                         }
                                     }
-                                return <TableCell> {t.split("\\n").map((p) => <Typography> {p} </Typography>)} </TableCell>
+                                return <TableCell> {t.toString().split("\\n").map((p) => <Typography> {p} </Typography>)} </TableCell>
                                 }
                             )}
                         </TableRow>})}
