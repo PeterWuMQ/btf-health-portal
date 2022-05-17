@@ -4,72 +4,137 @@
         "occupation": "GP",
         "postcode": "2154",
         "gender": "Male",
-        "body": "Name: Allen Fang \\n Language English, Mandarin, Cantonese \\n Phone Number: (02)9659 6655 \\n Address: 6-14 Old Castle Hill Road Castle Hill NSW Castle Hill NSW 2154 \\n Website: www.castletowersmedicalpractice.com.au"
+        "language": "English Mandarin Cantonese",
+        "body": "Name: Allen Fang  \\n Phone Number: (02)9659 6655 \\n Address: 6-14 Old Castle Hill Road Castle Hill NSW Castle Hill NSW 2154 \\n Website: https://castletowersmedicalpractice.com.au"
     },
     {
         "id": 1,
         "occupation": "GP",
         "postcode": "2154",
         "gender": "Female",
-        "body": "Name: Farah Ali \\n Language: English, Hindi, Urdu \\n Phone Number: (02)9659 6655 \\n Address: 6-14 Old Castle Hill Road Castle Hill NSW Castle Hill NSW 2154"
+        "language": "English Hindi",
+        "body": "Name: Farah Ali \\n Phone Number: (02)9659 6655 \\n Address: 6-14 Old Castle Hill Road Castle Hill NSW Castle Hill NSW 2154 \\n Website: https://castletowersmedicalpractice.com.au"
     },
     {
         "id": 2,
         "occupation": "Psychologist",
         "postcode": "2154",
         "gender": "Female",
-        "body": "Name: Karen Hartnett \\n Language: English \\n Phone Number: (02)9634 5000 \\n Address: Level 1, Castle Mall 4-16 Terminus Street Castle Hill NSW 2154"
+        "language": "English",
+        "body": "Name: Karen Hartnett \\n Phone Number: (02)9634 5000 \\n Address: Level 1, Castle Mall 4-16 Terminus Street Castle Hill NSW 2154 \\n Website: https://castlehillmedicalcentre.com.au/"
     },
     {
         "id": 3,
         "occupation": "Psychologist",
         "postcode": "2153",
         "gender":"Female",
-        "body": "Name: Jane Wong \\n Language: English, Cantonese \\n Phone Number: (02)7804 4051 \\n Address: Unit 202 11-13 Solent Circuit Baulkham Hills NSW 2153"
+        "language": "English Cantonese",
+        "body": "Name: Jane Wong \\n Phone Number: (02)7804 4051 \\n Address: Unit 202 11-13 Solent Circuit Baulkham Hills NSW 2153 \\n Website: https://janewongpsychology.com.au"
     },
     {
         "id": 4,
         "occupation": "Counsellor",
         "postcode": "2154",
         "gender": "Female",
-        "body": "Name: Sophie De Vries \\n Language: English \\n Phone Number: 0491 097 753 \\n Address: Cecil Ave Castle Hill NSW 2154"
+        "language": "English",
+        "body": "Name: Sophie De Vries \\n Phone Number: 0491 097 753 \\n Address: Cecil Ave Castle Hill NSW 2154 \\n Website: https://sydneyhillscounselling.com.au"
     },
     {
         "id": 5,
         "occupation": "Counsellor",
         "postcode": "2154",
         "gender": "Male",
-        "body": "Name: Ian Parkin \\n Language: English \\n Phone Number: 0434 355 446 \\n Address: 32 Showgrounds Rd Castle Hill NSW 2154"
+        "language": "English",
+        "body": "Name: Ian Parkin \\n Phone Number: 0434 355 446 \\n Address: 32 Showgrounds Rd Castle Hill NSW 2154 \\n Website: https://www.purposeforlife.com.au"
     },
     {
         "id": 6,
         "occupation":"GP",
         "postcode": "2220",
+        "gender": "Male",
+        "language": "English Cantonese Malaysian Mandarin",
+        "body": "Name: Anthony Phang \\n Phone Number: (02)9580 7233 \\n Address: 185A Forest Rd Hurstville NSW 2220 \\n Website: https://qualitashealth.com.au/"
+    },
+    {
+        "id": 7,
+        "occupation": "GP",
+        "postcode": "2220",
+        "gender": "Female",
+        "language": "Cantonese English Mandarin",
+        "body": "Name: Cindy Tang \\n Phone Number: (02)9580 7233 \\n Address: 185A Forest Rd Hurstville NSW 2220 \\n Website: https://qualitashealth.com.au/"
+    },
+    {
+        "id": 8,
+        "occupation": "Psychologist",
+        "postcode": "2220",
+        "gender": "Male",
+        "language": "English Cantonese Mandarin",
+        "body": "Name: Andrew Liu  \\n Phone Number: 1300 001 778 \\n Address: 1262a/7-11 The Avenue Hurstville NSW 2220 \\n Website: https://newvisionpsychology.com.au/"
+    },
+    {
+        "id": 9,
+        "occupation": "Psychologist",
+        "postcode": "2220",
+        "gender": "Female",
+        "language": "English Cantonese",
+        "body": "Name: Erica Chow \\n Phone Number: 1300 001 778 \\n Address: 1262a/7-11 The Avenue Hurstville NSW 2220 \\n Website: https://newvisionpsychology.com.au/"
+    },
+    {
+        "id": 10,
+        "occupation": "Counsellor",
+        "postcode": "2134",
         "gender":"Male",
-        "body": "Name: Anthony Phang \\n Language: Cantonese, English, Malaysian, Mandarin \\n Phone Number: (02)9580 7233 \\n Address: 185A Forest Rd Hurstville NSW 2220"
-    },
-    {
-        "id": 1,
-        "tag": "GP",
-        "postcode": "1111",
-        "body": ""
-    },
-    {
-        "id": 2,
-        "tag": "Therapist",
-        "postcode": "1111",
-        "body": ["Therapist 1", "Therapist"]
-    },
-    {
-        "id": 3,
-        "tag": "Online",
-        "postcode": "1111",
+        "language": "English Malaysian Cantonese",
+        "body": "Name: Kwan Chung \\n Phone Number: (02)9538 7077 \\n Address: Suite E Level 2 9 Burwood Rd Burwood NSW 2134 Burwood NSW 2134 \\n Website: https://www.thehubcounselling.com"
+    },{
+        "id": 9,
+        "occupation": "Counsellor",
+        "postcode": "2223",
+        "gender": "Female",
+        "language": "English",
+        "body": "Name: Carmel Catanuto \\n Phone Number: (02)9159 6093 \\n Address: Unit 1 93 Mulga Road Oatley NSW 2223 \\n Website: https://carmelcatanuto-psychotherapy.com.au"
+    },{
+        "id": 9,
+        "occupation": "GP",
+        "postcode": "2077",
+        "gender": "Female",
+        "language": "English Mandarin",
+        "body": "Name: Ying Yu \\n Phone Number: (02)9987 2226 \\n Address: The Madison Building Suite 1 LG 25/29 Hunter St Hornsby NSW 2077 \\n Website: https://hornsby.themadisonmedicalpractice.com.au"
+    },{
+        "id": 9,
+        "occupation":"GP",
+        "postcode": "2077",
+        "gender": "Male",
+        "language": "English Hindi Punjabi Bahasa Malaysia",
+        "body": "Name: Dr Kuldeep Sidhu \\n Phone Number: (02)9987 2226 \\n Address: The Madison Building Suite 1 LG 25/29 Hunter St Hornsby NSW 2077 \\n Website: https://hornsby.themadisonmedicalpractice.com.au"
+    },{
+        "id": 9,
+        "occupation":"Psychologists",
+        "postcode": "2077",
+        "gender": "Female",
+        "language": "English",
+        "body": "Name:  Ling Caslick \\n Phone Number: (02)9987 2626 \\n Address: Level 6 Suite 607 90 George Street Hornsby NSW 2077 \\n Website: https://www.hornsbycounselling.com.au"
+    },{
+        "id": 9,
+        "occupation":"Psychologists",
+        "postcode": "2077",
+        "gender":"Male",
+        "language": "English",
+        "body": "Name: Khalil Dolatyar \\n Phone Number: (02)6189 2642 \\n Address: Suite 4 19 Hunter St Hornsby NSW 2077 \\n Website: https://www.stephanieturnbullpsychology.com.au"
+
+    },{
+        "id": 9,
+        "occupation":"",
+        "postcode": "",
+        "gender":"",
+        "language":[],
         "body": ["Online 1"]
-    },
-    {
-        "id": 4,
-        "tag": "Telephone",
-        "postcode": "1111",
-        "body": ["Telephone 1", "Telephone", "Telephone"]
+    },{
+        "id": 9,
+        "occupation":"",
+        "postcode": "",
+        "gender":"",
+        "language":[],
+        "body": ["Online 1"]
     }
 ]
