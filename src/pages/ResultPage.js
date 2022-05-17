@@ -63,13 +63,18 @@ function ResultsPage({ tables, result }) {
                                         If you feel like you would benefit from utilising a service relevant to you, please select "Next". If not, you can close this window, or go "Back Home".
                                     </Text>
                                 </Box>
-                                <Link to="/" style={{ textDecoration: 'none' }}>
-                                    <NormalButton variant="contained"> Back Home </NormalButton>
-                                </Link>
-
-                                <Link to="/questionnaire2" style={{ textDecoration: 'none' }}>
-                                    <NormalButton variant="contained"> Next </NormalButton>
-                                </Link>
+                                <Grid container spacing={1}>
+                                    <Grid item>
+                                        <Link to="/" style={{ textDecoration: 'none' }}>
+                                            <NormalButton variant="contained"> Back Home </NormalButton>
+                                        </Link>
+                                    </Grid>
+                                    <Grid item>
+                                        <Link to="/questionnaire2" style={{ textDecoration: 'none' }}>
+                                            <NormalButton variant="contained"> Next </NormalButton>
+                                        </Link>
+                                    </Grid>
+                                </Grid>
                             </Box>
                         </Box>
                     </Paper>
