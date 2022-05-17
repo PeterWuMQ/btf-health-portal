@@ -15,21 +15,21 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
       const tempTab = tables
 
       if(tempRes[7].value === "2067") {
-        tempRec = tempRec.filter(r => r.postcode === "2067")
+        tempRec = tempRec.filter(r => (r.postcode === "2067" || r.postcode === ""))
       } else if (tempRes[7].value === "2154") {
-        tempRec = tempRec.filter(r => r.postcode === "2154")
+        tempRec = tempRec.filter(r => (r.postcode === "2154" || r.postcode === ""))
       } else if (tempRes[7].value === "2220") {
-        tempRec = tempRec.filter(r => r.postcode === "2220")
+        tempRec = tempRec.filter(r => (r.postcode === "2220" || r.postcode === ""))
       } else if (tempRes[7].value === "2077") {
-        tempRec = tempRec.filter(r => r.postcode === "2077")
+        tempRec = tempRec.filter(r => (r.postcode === "2077" || r.postcode === ""))
       } else if (tempRes[7].value === "2165") {
-        tempRec = tempRec.filter(r => r.postcode === "2165")
+        tempRec = tempRec.filter(r => (r.postcode === "2165" || r.postcode === ""))
       }
 
       if(tempRes[3].value === "Female") {
-        tempRec = tempRec.filter(r => r.gender === "Female")
+        tempRec = tempRec.filter(r => (r.gender === "Female" || r.gender === ""))
       } else if (tempRes[3].value === "Male") {
-        tempRec = tempRec.filter(r => r.gender === "Male")
+        tempRec = tempRec.filter(r => (r.gender === "Male" || r.gender === ""))
       } 
 
       if(tempRes[4].value === "Mandarin") {
@@ -51,43 +51,23 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
       if(tempRes.length !== 0 && tables) {
         if(tempRes[0].value === "GP") {
           const gp = tempRec.filter(r => r.occupation === "GP") 
-          let tempGP = gp.shift()
-          if(tempGP != null && gp) {
-            gp.map((g) => tempGP.body = tempGP.body + " \\n --------------------- \\n " + g.body)
-            tempTab[2].rows.push([tempGP.occupation, tempGP.body])
-          }
+          if (gp.length !== 0) tempTab[2].rows.push([gp[0].occupation, gp.map((g, i) => i === 0 ? g.body : " \\n --------------------- \\n " + g.body)])
         }
         if(tempRes[1].value === "Counsellor") {
           const coun = tempRec.filter(r => r.occupation === "Counsellor") 
-          let tempCoun = coun.shift()
-          if(tempCoun != null && coun) {
-            coun.map((g) => tempCoun.body = tempCoun.body + " \\n --------------------- \\n " + g.body)
-            tempTab[2].rows.push([tempCoun.occupation, tempCoun.body])
-          }
+          if (coun.length !== 0) tempTab[2].rows.push([coun[0].occupation, coun.map((g, i) => i === 0 ? g.body : " \\n --------------------- \\n " + g.body)])
         }
         if(tempRes[2].value === "Psychologist") {
           const psy = tempRec.filter(r => r.occupation === "Psychologist") 
-          let tempPsy = psy.shift()
-          if(tempPsy != null && psy) {
-            psy.map((g) => tempPsy.body = tempPsy.body + " \\n --------------------- \\n " + g.body)
-            tempTab[2].rows.push([tempPsy.occupation, tempPsy.body])  
-          }
+          if (psy.length !== 0) tempTab[2].rows.push([psy[0].occupation, psy.map((g, i) => i === 0 ? g.body : " \\n --------------------- \\n " + g.body)])
         }
-        if(tempRes[2].value === "Online") {
+        if(tempRes[5].value === "Online") {
           const on = tempRec.filter(r => r.occupation === "Online") 
-          let tempON = on.shift()
-          if(tempON != null && on) {
-            on.map((g) => tempON.body = tempON.body + " \\n --------------------- \\n " + g.body)
-            tempTab[2].rows.push([tempON.occupation, tempON.body])   
-          }
+          if (on.length !== 0) tempTab[2].rows.push([on[0].occupation, on.map((g, i) => i === 0 ? g.body : " \\n --------------------- \\n " + g.body)])
         }
-        if(tempRes[2].value === "Telephone") {
+        if(tempRes[6].value === "Telephone") {
           const tele = tempRec.filter(r => r.occupation === "Telephone") 
-          let tempTele = tele.shift()
-          if(tempTele != null && tele) {
-            tele.map((g) => tempTele.body = tempTele.body + " \\n --------------------- \\n " + g.body)
-            tempTab[2].rows.push([tempTele.occupation, tempTele.body])  
-          }
+          if (tele.length !== 0) tempTab[2].rows.push([tele[0].occupation, tele.map((g, i) => i === 0 ? g.body : " \\n --------------------- \\n " + g.body)])
         }
   
         setRecommendationsTable(tempTab[2])
