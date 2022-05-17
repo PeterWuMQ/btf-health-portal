@@ -35,6 +35,7 @@ function QuestionnairePage ({questions, setResult}) {
             <Grid container spacing={4}>  
                 <Grid item>
                     <Paper elevation={10}>
+                        <Box pt={3} pb={3} pl={4} pr={4}>
                         <Text variant={"h1"}>
                             Depression, Anxiety and Stress Scale 21 (DASS-21) 
                         </Text>
@@ -42,11 +43,12 @@ function QuestionnairePage ({questions, setResult}) {
                             Please carefully read each statement and select the option with which you most agree. {"\n"}{"\n"}
                             Try to not overthink or spend too much time on each question, just simply consider which option most applies to you regarding your feelings over the past week. 
                         </Text>
+                        </Box>
                     </Paper>
                 </Grid>
                 <Grid item>
                     <Paper elevation={10}>
-                        <Box pt={3}>
+                        <Box pt={3} pr={100}>
                             <form onSubmit={handleSubmit}>
                                 <QuestionList questions={questions} answers={answers} setAnswers={setAnswers}></QuestionList>
                                     <Box textAlign={"center"} pb={3}>   
