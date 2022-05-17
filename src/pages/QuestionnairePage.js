@@ -6,7 +6,7 @@ import Text from '../components/Text';
 import QuestionList from '../components/QuestionList';
 
 
-function QuestionnairePage ({questions, setResult, tables, setTables}) {
+function QuestionnairePage ({questions, setResult}) {
     const [answers, setAnswers] = useState([]) 
     const navigate = useNavigate();
    
