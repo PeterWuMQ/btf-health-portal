@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import NormalButton from '../components/NormalButton';
-import Heading from '../components/text/Heading';
-import NormalText from '../components/text/NormalText';
+import Text from '../components/Text';
 import Table from '../components/table/Table';
 
 
@@ -59,16 +58,16 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
 
     return (
         <div>
-            <Heading>
+            <Text>
                 Services For You
-            </Heading>
+            </Text>
 
-            <NormalText>
+            <Text>
                 Based on your answers, we have generated a list of services which are most relevant to you: {"\n"}{"\n"}
                 (for the purpose of demonstrating a User Interface Diagram, let us assume that this particular 
                 user has selected that they are between the ages of 18-24, female, speaks Mandarin, and is 
                 single, as well as that they would like to see a GP and use an online service)
-            </NormalText>
+            </Text>
 
             {recommendationsTable ? <Table headings={recommendationsTable.headings} rows={recommendationsTable.rows}/>
             : <></>}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NormalText from '../text/NormalText';
+import Text from '../Text';
 
 
 function TableRow ({rowItems, result, index}) {
@@ -12,15 +12,15 @@ function TableRow ({rowItems, result, index}) {
                 var temp = r.match(/[0-9]+/g)
                 return i !== 0 
                 ? (temp.length === 1 && result[0][i - 1] >= temp[0]) || (result[0][i - 1] >= temp[0] && result[0][i - 1] <= temp[1])
-                ? <td bgcolor={colour} key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>
-                : <td key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>
-                : <td key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>
+                ? <td bgcolor={colour} key={i + ".1"}><Text key={i + ".2"}> {r} </Text></td>
+                : <td key={i + ".1"}><Text key={i + ".2"}> {r} </Text></td>
+                : <td key={i + ".1"}><Text key={i + ".2"}> {r} </Text></td>
             })
             : rowItems.map((r, i) => {
                 if(Array.isArray(r)) {
-                    return <td key={i + ".1"}> {r.map((t, i2) => <NormalText key={i + i2 + ".2"}> {t} </NormalText>)}</td>
+                    return <td key={i + ".1"}> {r.map((t, i2) => <Text key={i + i2 + ".2"}> {t} </Text>)}</td>
                 } else {
-                    return <td key={i + ".1"}><NormalText key={i + ".2"}> {r} </NormalText></td>
+                    return <td key={i + ".1"}><Text key={i + ".2"}> {r} </Text></td>
                 } 
                 })}
         </tr>

@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import NormalButton from '../components/NormalButton';
-import Heading from '../components/text/Heading';
-import NormalText from '../components/text/NormalText';
+import Text from '../components/Text';
 import QuestionList from '../components/lists/QuestionList';
 
 
@@ -32,13 +31,13 @@ function QuestionnairePage ({questions, setResult, tables, setTables}) {
 
     return (
         <div>
-            <Heading>
+            <Text variant={"h1"}>
                 Depression, Anxiety and Stress Scale 21 (DASS-21) 
-            </Heading>
-            <NormalText>
+            </Text>
+            <Text variant={"h3"}>
                 Please carefully read each statement and select the option with which you most agree. {"\n"}{"\n"}
                 Try to not overthink or spend too much time on each question, just simply consider which option most applies to you regarding your feelings over the past week. 
-            </NormalText>
+            </Text>
 
             <form onSubmit={handleSubmit}>
                 <QuestionList questions={questions} answers={answers} setAnswers={setAnswers}></QuestionList>

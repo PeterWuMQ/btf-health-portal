@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import NormalButton from '../components/NormalButton';
-import Heading from '../components/text/Heading';
 import QuestionList from '../components/lists/QuestionList';
-import Subheading from '../components/text/Subheading';
-
+import Text from '../components/Text';
 
 function DirectQuestionsPage ({questions, setResultsDQ}) {
     const [answers, setAnswers] = useState([]) 
@@ -31,12 +29,12 @@ function DirectQuestionsPage ({questions, setResultsDQ}) {
 
     return (
         <div>
-            <Heading>
+            <Text>
                 Questions About You
-            </Heading>
-            <Subheading>
+            </Text>
+            <Text>
                 By answering these questions, it will help us in providing the most relevant services to you.  
-            </Subheading>
+            </Text>
             <form onSubmit={handleSubmit}>
                 <QuestionList questions={questions} answers={answers} setAnswers={setAnswers}></QuestionList>
                 <NormalButton type="submit" variant="outlined"> 

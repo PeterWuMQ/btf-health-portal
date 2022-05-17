@@ -1,11 +1,11 @@
 import React from 'react';
 
-import NormalText from '../text/NormalText';
+import Text from '../Text';
 
 
 function TableHeading ({children}) {
     return (
-        <th><NormalText> {children} </NormalText></th>
+        <th><Text> {children} </Text></th>
     )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Text from './Text';
 
 function Answer ({id, name, tempAnswers, setAnswers, qid, type, value, checked, children}) {
     return (
@@ -10,7 +11,7 @@ function Answer ({id, name, tempAnswers, setAnswers, qid, type, value, checked, 
                 newArray[qid] = {type, value: event.target.value}
                 setAnswers(newArray)
                 }}/>
-            {children}</label>
+            {children} </label>
         </div>
     )
 }

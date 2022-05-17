@@ -1,16 +1,18 @@
 import React from 'react';
+
 import Answer from './Answer';
 import Input from './Input';
 import Select from './Select';
+import Text from './Text';
 
 
 function Question ({qid, question, tempAnswers, answers, setAnswers, type}) {
     const option = qid + "option"
     return (
         <div>
-            <p>
+            <Text variant={"h3"}>
                 {question}
-            </p>
+            </Text>
             {type === "dd" 
             ? <Select name={option} id={qid} answers={answers} type={""} tempAnswers={tempAnswers} setAnswers={setAnswers}/>
             : type === "tb" 

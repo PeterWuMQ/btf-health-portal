@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import Pdf from 'react-to-pdf'
 
 import NormalButton from '../components/NormalButton'
-import Heading from '../components/text/Heading';
-import NormalText from '../components/text/NormalText';
+import Text from '../components/Text';
 import Table from '../components/table/Table'
 import ShareModal from '../components/ShareModal';
 
@@ -23,24 +22,24 @@ function ResultsPage({ tables, result }) {
     return (
         <div>
             <div ref={ref}>
-                <Heading>
+                <Text>
                     Your Results
-                </Heading>
+                </Text>
 
                 {resultTable ? <Table headings={resultTable.headings} rows={resultTable.rows} />
                     : <></>}
 
-                <Heading>
+                <Text>
                     Results Guide
-                </Heading>
+                </Text>
 
                 {tables ? <Table headings={tables.filter(t => t.id === 1)[0].headings} rows={tables.filter(t => t.id === 1)[0].rows} result={tables.filter(t => t.id === 0)[0].rows} />
                     : <></>}
             </div>
 
-            <NormalText>
+            <Text>
                 If you would like to download a copy of your results:
-            </NormalText>
+            </Text>
 
             <Pdf targetRef={ref} filename="DASS-21 Results">
                 {({ toPdf }) => <NormalButton onClick={toPdf} variant="outlined"> Download </NormalButton>}
@@ -48,9 +47,9 @@ function ResultsPage({ tables, result }) {
 
             <ShareModal/>
 
-            <NormalText>
+            <Text>
                 If you feel like you would benefit from utilising a service relevant to you, please select "Next". If not, you can close this window, or go "Back Home".
-            </NormalText>
+            </Text>
 
             <Link to="/" style={{ textDecoration: 'none' }}>
                 <NormalButton variant="outlined"> Back Home </NormalButton>
