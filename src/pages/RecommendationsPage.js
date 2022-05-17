@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import NormalButton from '../components/NormalButton';
 import Text from '../components/Text';
-import Table from '../components/table/Table';
+import NormalTable from '../components/NormalTable';
 
 
 function RecommendationsPage ({tables, resultsDQ, recommendations}) {
@@ -69,7 +69,7 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
                 single, as well as that they would like to see a GP and use an online service)
             </Text>
 
-            {recommendationsTable ? <Table headings={recommendationsTable.headings} rows={recommendationsTable.rows}/>
+            {recommendationsTable ? <NormalTable headings={recommendationsTable.headings} rows={recommendationsTable.rows}/>
             : <></>}
 
             <Link to="/" style={{ textDecoration: 'none' }}>

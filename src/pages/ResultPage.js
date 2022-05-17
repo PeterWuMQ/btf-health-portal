@@ -4,7 +4,7 @@ import Pdf from 'react-to-pdf'
 
 import NormalButton from '../components/NormalButton'
 import Text from '../components/Text';
-import Table from '../components/table/Table'
+import NormalTable from '../components/NormalTable'
 import ShareModal from '../components/ShareModal';
 
 const ref = React.createRef()
@@ -26,14 +26,14 @@ function ResultsPage({ tables, result }) {
                     Your Results
                 </Text>
 
-                {resultTable ? <Table headings={resultTable.headings} rows={resultTable.rows} />
+                {resultTable ? <NormalTable headings={resultTable.headings} rows={resultTable.rows} />
                     : <></>}
 
                 <Text>
                     Results Guide
                 </Text>
 
-                {tables ? <Table headings={tables.filter(t => t.id === 1)[0].headings} rows={tables.filter(t => t.id === 1)[0].rows} result={tables.filter(t => t.id === 0)[0].rows} />
+                {tables ? <NormalTable headings={tables.filter(t => t.id === 1)[0].headings} rows={tables.filter(t => t.id === 1)[0].rows} result={tables.filter(t => t.id === 0)[0].rows} />
                     : <></>}
             </div>
 

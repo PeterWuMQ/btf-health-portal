@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import NormalButton from '../components/NormalButton';
 import Text from '../components/Text';
-import QuestionList from '../components/lists/QuestionList';
+import QuestionList from '../components/QuestionList';
 
 
 function QuestionnairePage ({questions, setResult, tables, setTables}) {
