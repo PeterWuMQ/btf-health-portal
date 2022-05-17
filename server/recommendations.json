@@ -87,51 +87,135 @@
         "language": "English Malaysian Cantonese",
         "body": "Name: Kwan Chung \\n Phone Number: (02)9538 7077 \\n Address: Suite E Level 2 9 Burwood Rd Burwood NSW 2134 Burwood NSW 2134 \\n Website: https://www.thehubcounselling.com"
     },{
-        "id": 9,
+        "id": 11,
         "occupation": "Counsellor",
         "postcode": "2223",
         "gender": "Female",
         "language": "English",
         "body": "Name: Carmel Catanuto \\n Phone Number: (02)9159 6093 \\n Address: Unit 1 93 Mulga Road Oatley NSW 2223 \\n Website: https://carmelcatanuto-psychotherapy.com.au"
     },{
-        "id": 9,
+        "id": 12,
         "occupation": "GP",
         "postcode": "2077",
         "gender": "Female",
         "language": "English Mandarin",
         "body": "Name: Ying Yu \\n Phone Number: (02)9987 2226 \\n Address: The Madison Building Suite 1 LG 25/29 Hunter St Hornsby NSW 2077 \\n Website: https://hornsby.themadisonmedicalpractice.com.au"
     },{
-        "id": 9,
+        "id": 13,
         "occupation":"GP",
         "postcode": "2077",
         "gender": "Male",
         "language": "English Hindi Punjabi Bahasa Malaysia",
         "body": "Name: Dr Kuldeep Sidhu \\n Phone Number: (02)9987 2226 \\n Address: The Madison Building Suite 1 LG 25/29 Hunter St Hornsby NSW 2077 \\n Website: https://hornsby.themadisonmedicalpractice.com.au"
     },{
-        "id": 9,
+        "id": 14,
         "occupation":"Psychologists",
         "postcode": "2077",
         "gender": "Female",
         "language": "English",
         "body": "Name:  Ling Caslick \\n Phone Number: (02)9987 2626 \\n Address: Level 6 Suite 607 90 George Street Hornsby NSW 2077 \\n Website: https://www.hornsbycounselling.com.au"
     },{
-        "id": 9,
+        "id": 15,
         "occupation":"Psychologists",
         "postcode": "2077",
         "gender":"Male",
         "language": "English",
-        "body": "Name: Khalil Dolatyar \\n Phone Number: (02)6189 2642 \\n Address: Suite 4 19 Hunter St Hornsby NSW 2077 \\n Website: https://www.stephanieturnbullpsychology.com.au"
+        "body": "Name: Khalil Dolatyar \\n Phone Number: (02)6189 2642 \\n Address: Suite 4 19 Hunter St Hornsby NSW 2077"
+    },{
+        "id": 16,
+        "occupation":"Counsellor",
+        "postcode": "2077",
+        "gender":"Female",
+        "language": "English",
+        "body": "Name: Stephanie Turnbull \\n Phone Number: 0400 019 518 \\n Address: Level 1 Shop 17, 25-29 Hunter Street Hornsby NSW 2077 \\n Website: https://www.stephanieturnbullpsychology.com.au"
+    },{
+        "id": 17,
+        "occupation":"Counsellor",
+        "postcode": "2077",
+        "gender":"Male",
+        "language": "English",
+        "body": "Name: Peter Foster \\n Phone Number: (02)6189 2714 \\n Address: 21 Hunter Street Suite 9 Hornsby NSW 2077 \\n Website: https://concordance.com.au"
+    },{
+        "id": 18,
+        "occupation":"GP",
+        "postcode": "2165",
+        "gender": "Female",
+        "language": "English,Cantonese, Malaysian, Mandarin",
+        "body": "Name: Siam Nah Tang \\n Phone Number: (02)9723 8111 \\n Address: 51 Smart Street Fairfield NSW 2165 \\n Website: https://fairfieldcentralmedical.com.au"
+    },{
+        "id": 19,
+        "occupation":"GP",
+        "postcode": "2165",
+        "gender": "Male",
+        "language": "English",
+        "body": "Name: Stephanus Hugo \\n Phone Number: (02)9723 8111 \\n Address: 51 Smart Street Fairfield NSW 2165 \\n Website: https://fairfieldcentralmedical.com.au/"
 
     },{
-        "id": 9,
-        "occupation":"",
+        "id": 20,
+        "occupation":"telephone",
+        "postcode": "",
+        "gender":"",
+        "language":[],
+        "body": ["Online 1"]
+    },{
+        "id": 17,
+        "occupation":"telephone",
+        "postcode": "",
+        "gender":"",
+        "language":[],
+        "body": ["Online 1"]
+    },{
+        "id": 17,
+        "occupation":"telephone",
+        "postcode": "",
+        "gender":"",
+        "language":[],
+        "body": ["Online 1"]
+    },{
+        "id": 17,
+        "occupation":"telephone",
+        "postcode": "",
+        "gender":"",
+        "language":[],
+        "body": ["Online 1"]
+    },{
+        "id": 17,
+        "occupation":"telephone",
+        "postcode": "",
+        "gender":"",
+        "language":[],
+        "body": ["Online 1"]
+    },{
+        "id": 17,
+        "occupation":"telephone",
+        "postcode": "",
+        "gender":"",
+        "language":[],
+        "body": ["Online 1"]
+    },{
+        "id": 17,
+        "occupation":"telephone",
+        "postcode": "",
+        "gender":"",
+        "language":[],
+        "body": ["Online 1"]
+    },{
+        "id": 17,
+        "occupation":"telephone",
+        "postcode": "",
+        "gender":"",
+        "language":[],
+        "body": ["Online 1"]
+    },{
+        "id": 17,
+        "occupation":"telephone",
         "postcode": "",
         "gender":"",
         "language":[],
         "body": ["Online 1"]
     },{
         "id": 9,
-        "occupation":"",
+        "occupation":"online",
         "postcode": "",
         "gender":"",
         "language":[],
