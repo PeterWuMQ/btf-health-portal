@@ -64,6 +64,14 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
           const psy = tempRec.filter(r => r.occupation === "Psychologist") 
           psy.map((g) => tempTab[2].rows.push([g.occupation, g.body]))    
         }
+        if(tempRes[2].value === "Online") {
+          const on = tempRec.filter(r => r.occupation === "Online") 
+          on.map((g) => tempTab[2].rows.push([g.occupation, g.body]))    
+        }
+        if(tempRes[2].value === "Telephone") {
+          const tele = tempRec.filter(r => r.occupation === "Telephone") 
+          tele.map((g) => tempTab[2].rows.push([g.occupation, g.body]))    
+        }
   
         setRecommendationsTable(tempTab[2])
         console.log(tempTab[2])
