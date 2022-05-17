@@ -1,3 +1,4 @@
+import { Box, Grid, Paper } from '@mui/material';
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -29,18 +30,34 @@ function DirectQuestionsPage ({questions, setResultsDQ}) {
 
     return (
         <div>
-            <Text>
-                Questions About You
-            </Text>
-            <Text>
-                By answering these questions, it will help us in providing the most relevant services to you.  
-            </Text>
-            <form onSubmit={handleSubmit}>
-                <QuestionList questions={questions} answers={answers} setAnswers={setAnswers}></QuestionList>
-                <NormalButton type="submit" variant="outlined"> 
-                    Find Services
-                </NormalButton>
-            </form>
+            <Box pt={10}>
+                <Grid container spacing={4}>
+                    <Grid>
+                        <Paper>
+                            <Box pt={4} pb={4} pl={4} pr={4}>
+                                <Box pb={3}>
+                                    <Text variant={"h1"}>
+                                        Questions About You
+                                    </Text>
+                                </Box>
+                                
+                            <Text>
+                                By answering these questions, it will help us in providing the most relevant services to you.  
+                            </Text>
+                            <form onSubmit={handleSubmit}>
+                                <QuestionList questions={questions} answers={answers} setAnswers={setAnswers}></QuestionList>
+                                <Box pt={2}>
+                                    <NormalButton type="submit" variant="outlined"> 
+                                        Find Services
+                                    </NormalButton>
+                                </Box>
+                            </form>
+                            </Box>
+                        </Paper>
+                    </Grid>
+                
+                </Grid>
+            </Box>
         </div>
     )
 }

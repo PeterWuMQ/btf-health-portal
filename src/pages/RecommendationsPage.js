@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import NormalButton from '../components/NormalButton';
 import Text from '../components/Text';
 import NormalTable from '../components/NormalTable';
+import { Box, Grid, Paper } from '@mui/material';
 
 
 function RecommendationsPage ({tables, resultsDQ, recommendations}) {
@@ -71,23 +72,38 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
 
     return (
         <div>
-            <Text>
-                Services For You
-            </Text>
+          <Box pt={10}>
+            <Grid container spacing={4}>
+              <Grid item>
+                <Paper>
+                  <Box pt={4} pb={4} pl={6} pr={6}>
+                    <Box pb={3}>
+                      <Text variant={"h1"}>
+                        Services For You
+                      </Text>
+                    </Box>
 
-            <Text>
-                Based on your answers, we have generated a list of services which are most relevant to you: {"\n"}{"\n"}
-                (for the purpose of demonstrating a User Interface Diagram, let us assume that this particular 
-                user has selected that they are between the ages of 18-24, female, speaks Mandarin, and is 
-                single, as well as that they would like to see a GP and use an online service)
-            </Text>
+                    <Box pb={3} pl={2}>
+                      <Text>
+                        Based on your answers, we have generated a list of services which are most relevant to you: {"\n"}{"\n"}
+                        (for the purpose of demonstrating a User Interface Diagram, let us assume that this particular 
+                        user has selected that they are between the ages of 18-24, female, speaks Mandarin, and is 
+                        single, as well as that they would like to see a GP and use an online service)
+                      </Text>
+                    </Box>
 
-            {recommendationsTable ? <NormalTable headings={recommendationsTable.headings} rows={recommendationsTable.rows}/>
-            : <></>}
-
-            <Link to="/" style={{ textDecoration: 'none' }}>
-                <NormalButton variant="contained"> Back Home </NormalButton>
-            </Link>
+                    {recommendationsTable ? <NormalTable headings={recommendationsTable.headings} rows={recommendationsTable.rows}/>
+                    : <></>}
+                    <Box pt={4}>
+                      <Link to="/" style={{ textDecoration: 'none' }}>
+                          <NormalButton variant="contained"> Back Home </NormalButton>
+                      </Link>
+                    </Box>
+                  </Box>
+                </Paper>
+              </Grid>
+            </Grid>
+          </Box>
         </div>
     )
 }
