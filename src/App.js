@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import './App.css';
 
+import { CssBaseline} from '@mui/material';
 import api from './services/api';
 import DirectQuestionsPage from './pages/DirectQuestionsPage';
 import HomePage from './pages/HomePage'
@@ -11,7 +12,6 @@ import RecommendationPage from './pages/RecommendationsPage'
 import ResultsPage from './pages/ResultPage'
 
 import { Container } from '@mui/material';
-import Paper from '@mui/material/Paper';
 
 function App() {
   const [questions, setQuestions] = useState([])
@@ -23,6 +23,11 @@ function App() {
 
   const THEME = createTheme({
     
+    palette: {
+      background: {
+        default: "#d8ebff"
+      }
+    },
     components: {
       MuiButton: {
           styleOverrides: {
@@ -38,7 +43,14 @@ function App() {
                   boxShadow: '1px 2px 4px rgb(0 0 0 / 10%)',
               }
           }
-      }
+      },
+      MuiPaper: {
+        styleOverrides: {
+            root: {
+                background: '#fff',
+            }
+        }
+    }
     },
 
    
@@ -93,7 +105,7 @@ function App() {
 
   return (
     <ThemeProvider theme={THEME}>
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" maxHeight="lg">
         <Router>
           <Routes>
             <Route path="/recommendations" element={<RecommendationPage tables={tables} resultsDQ={resultsDQ} recommendations={recommendations}/>} />
@@ -103,6 +115,9 @@ function App() {
             <Route path="/" element={<HomePage />} />
           </Routes>
         </Router>
+        <CssBaseline>
+
+        </CssBaseline>
       </Container>
     </ThemeProvider>
   );
