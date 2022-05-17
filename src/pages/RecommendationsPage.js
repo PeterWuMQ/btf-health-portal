@@ -52,25 +52,33 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
       if(tempRes.length !== 0 && tables) {
         if(tempRes[0].value === "GP") {
           const gp = tempRec.filter(r => r.occupation === "GP") 
-          console.log(tempRec)
-          console.log(gp)
-          gp.map((g) => tempTab[2].rows.push([g.occupation, g.body]))
+          let tempGP = gp.shift()
+          gp.map((g) => tempGP.body = tempGP.body + " \\n --------------------- \\n " + g.body)
+          tempTab[2].rows.push([tempGP.occupation, tempGP.body])
         }
         if(tempRes[1].value === "Counsellor") {
           const coun = tempRec.filter(r => r.occupation === "Counsellor") 
-          coun.map((g) => tempTab[2].rows.push([g.occupation, g.body]))
+          let tempCoun = coun.shift()
+          coun.map((g) => tempCoun.body = tempCoun.body + " \\n --------------------- \\n " + g.body)
+          tempTab[2].rows.push([tempCoun.occupation, tempCoun.body])
         }
         if(tempRes[2].value === "Psychologist") {
           const psy = tempRec.filter(r => r.occupation === "Psychologist") 
-          psy.map((g) => tempTab[2].rows.push([g.occupation, g.body]))    
+          let tempPsy = psy.shift()
+          psy.map((g) => tempPsy.body = tempPsy.body + " \\n --------------------- \\n " + g.body)
+          tempTab[2].rows.push([tempPsy.occupation, tempPsy.body])   
         }
         if(tempRes[2].value === "Online") {
           const on = tempRec.filter(r => r.occupation === "Online") 
-          on.map((g) => tempTab[2].rows.push([g.occupation, g.body]))    
+          let tempON = on.shift()
+          on.map((g) => tempON.body = tempON.body + " \\n --------------------- \\n " + g.body)
+          tempTab[2].rows.push([tempON.occupation, tempON.body])   
         }
         if(tempRes[2].value === "Telephone") {
           const tele = tempRec.filter(r => r.occupation === "Telephone") 
-          tele.map((g) => tempTab[2].rows.push([g.occupation, g.body]))    
+          let tempTele = tele.shift()
+          tele.map((g) => tempTele.body = tempTele.body + " \\n --------------------- \\n " + g.body)
+          tempTab[2].rows.push([tempTele.occupation, tempTele.body])  
         }
   
         setRecommendationsTable(tempTab[2])
@@ -80,7 +88,7 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
 
     return (
         <div>
-          <Box pt={10}>
+          <Box pt={10} pb={10}>
             <Grid container spacing={4}>
               <Grid item>
                 <Paper>
