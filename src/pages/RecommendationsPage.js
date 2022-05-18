@@ -90,9 +90,6 @@ function RecommendationsPage ({tables, resultsDQ, recommendations}) {
                     <Box pb={3} pl={2}>
                       <Text>
                         Based on your answers, we have generated a list of services which are most relevant to you: {"\n"}{"\n"}
-                        (for the purpose of demonstrating a User Interface Diagram, let us assume that this particular 
-                        user has selected that they are between the ages of 18-24, female, speaks Mandarin, and is 
-                        single, as well as that they would like to see a GP and use an online service)
                       </Text>
                     </Box>
 
