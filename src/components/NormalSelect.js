@@ -6,7 +6,7 @@ function NormalSelect ({name, label, id, answers, type, tempAnswers, setAnswers}
     const [selectedAnswer, setSelectedAnswer] = useState(answers[0][0])
     return (
         <div>
-            <Select name={name} id={id} value={selectedAnswer} onChange={(event) => {
+            <Select name={name} id={id} value={selectedAnswer} variant="standard" onChange={(event) => {
                     const newArray = tempAnswers
                     newArray[id] = {type, value: event.target.value}
                     setAnswers(newArray)
