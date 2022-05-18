@@ -9,6 +9,9 @@ import ShareModal from '../components/ShareModal';
 import { Box, Grid, Paper } from '@mui/material';
 
 const ref = React.createRef()
+const options = {
+    orientation: 'landscape',
+};
 
 function ResultsPage({ tables, result }) {
     const [resultTable, setResultTable] = useState(null)
@@ -53,7 +56,7 @@ function ResultsPage({ tables, result }) {
                                 </Box>
                                 <Box pb={3}>
                                     <Box pb= {1}>
-                                        <Pdf targetRef={ref} filename="DASS-21 Results">
+                                        <Pdf targetRef={ref} filename="DASS-21 Results" options={options} x={7}>
                                         {({ toPdf }) => <NormalButton onClick={toPdf} variant="contained"> Download </NormalButton>}
                                         </Pdf>
                                     </Box>
