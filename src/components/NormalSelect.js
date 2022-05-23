@@ -11,6 +11,7 @@ function NormalSelect ({name, label, id, answers, type, tempAnswers, setAnswers}
                     newArray[id] = {type, value: event.target.value}
                     setAnswers(newArray)
                     setSelectedAnswer(event.target.value)
+                    console.log(type)
                 }}>
                 {answers.map(a => <MenuItem value={a[0]}> {a[1]} </MenuItem>)}
             </Select>

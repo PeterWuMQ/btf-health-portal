@@ -13,7 +13,7 @@ function Question ({qid, question, tempAnswers, answers, setAnswers, type}) {
                 {question}
             </p>
             {type === "dd" || type === "d" || type === "a" || type === "s"
-            ? <Select name={option} id={qid} answers={answers} type={""} tempAnswers={tempAnswers} setAnswers={setAnswers}/>
+            ? <Select name={option} id={qid} answers={answers} type={type} tempAnswers={tempAnswers} setAnswers={setAnswers}/>
             : type === "tb" 
             ? <Input qid={qid} type={type} tempAnswers={tempAnswers} setAnswers={setAnswers} value={answers[0][1]}/>
             : <RadioGroup

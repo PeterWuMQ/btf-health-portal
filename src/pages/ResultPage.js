@@ -60,7 +60,7 @@ function ResultsPage({ tables, result }) {
                                         {({ toPdf }) => <NormalButton onClick={toPdf} variant="contained"> Download </NormalButton>}
                                         </Pdf>
                                     </Box>
-                                    <ShareModal/>
+                                    <ShareModal result={result}/>
                                 </Box>
                                 <Box>
                                     <Box pb={3}>
