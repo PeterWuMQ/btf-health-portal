@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const baseURL = "http://localhost:3001/api"
 
+// Retrieve DASS-21 questions
 const getQuestions = () => {
     return axios.get(baseURL + "/questions")
             .then(response => {
@@ -9,6 +10,7 @@ const getQuestions = () => {
             })
 }
 
+// Retrieve direct questions
 const getDirectQuestions = () => {
     return axios.get(baseURL + "/directquestions")
             .then(response => {
@@ -16,13 +18,7 @@ const getDirectQuestions = () => {
             })
 }
 
-const getResults = (result) => {
-    return axios.get(baseURL + "/results/" + result)
-            .then(response => {
-                return response.data
-            })
-}
-
+// Retrieve table information for all tables
 const getTables = () => {
     return axios.get(baseURL + "/tables")
             .then(response => {
@@ -30,6 +26,7 @@ const getTables = () => {
             })
 }
 
+// Retrieve a list of all services
 const getRecommendations = () => {
     return axios.get(baseURL + "/recommendations")
             .then(response => {
@@ -40,7 +37,6 @@ const getRecommendations = () => {
 const api = {
     getQuestions,
     getDirectQuestions,
-    getResults,
     getRecommendations,
     getTables
 }

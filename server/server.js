@@ -16,9 +16,6 @@ let questions = JSON.parse(fileData)
 fileData = fs.readFileSync('server/directquestions.json')
 let directQuestions = JSON.parse(fileData)
 
-fileData = fs.readFileSync('server/results.json')
-let results = JSON.parse(fileData)
-
 fileData = fs.readFileSync('server/recommendations.json')
 let recommendations = JSON.parse(fileData)
 
@@ -32,10 +29,6 @@ app.get('/api/questions', (request, response) => {
 
 app.get('/api/directquestions', (request, response) => {
     response.send(directQuestions)
-})
-
-app.get('/api/results', (request, response) => {
-    response.send(results)
 })
 
 app.get('/api/recommendations', (request, response) => {
