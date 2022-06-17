@@ -62,8 +62,11 @@ Returns list of JSON objects in questions.json
 Question JSON objects have the following format:
 
 id: An identifier for the question
+
 type: Indicating what category of DASS-21 question it is - d or a or s (which means depression, anxiety, stress accordingly)
+
 question: The text of the question
+
 answers: An array which contains the value and display text of each answer for the question
 
 `GET /api/directquestions`
@@ -72,8 +75,11 @@ Returns list of JSON objects in directiquestions.json
 Direct Question JSON objects have the following format:
 
 id: An identifier for the question
+
 type: Indicating what category of question - mc or dd (multiple choice or dropdown)
+
 question: The text of the question
+
 answers: An array which contains the value and display text of each answer for the question.
 
 `GET /api/tables`
@@ -82,7 +88,9 @@ Returns list of JSON objects in tables.json
 Table JSON objects have the following format:
 
 id: An identifier for the table
+
 headings: An array where each item contains the text for a cell in the top row of the table
+
 rows: An 2D containing the text for the body of the table. The number of arrays in the first dimension indicate how many rows are in the table and the number of items in the second dimension indicate the columns in that particular row (there should be a uniform amount of columns in all rows including the heading).
 
 `GET /api/recommendations`
@@ -91,10 +99,15 @@ Returns list of JSON objects in recommendations.json
 Recommendation JSON objects have the following format:
 
 id: An identifier for the service
+
 occupation: The 'type' of service e.g. counselor, gp, therapist etc
+
 postcode: The location (postcode) that the service is located in
+
 gender: Gender of the service
+
 language: The primary language the service provides
+
 body: The text of the service containing the name, phone, address, and website of the service, separated by line breaks (\\n) for formatting purposes
 
 ## Available Scripts
@@ -107,10 +120,10 @@ This installs all the dependencies needed to run the website as listed in packag
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you edit the code.\
+The page will reload when you edit the code.
 
 ### `npm run server`
 
